@@ -1,0 +1,98 @@
+@charset "utf-8";
+/* CSS Document */
+*{margin:0; padding:0}
+header{width:898px; height:143px; margin:0 auto}
+.logo{float:left; width:304px; height:88px; margin-top:45px}
+.linksearch{float:right; width:272px; height:60px; margin-top:65px}
+.linksearch input{float:left; margin-top:15px}
+.link{float:right; width:210px; height:20px}
+.link a{text-decoration:none; color:#06a5ec; font-size:12px; padding-left:5px; padding-right:5px}
+.link span{color:#06a5ec}
+
+.search{margin-left:50px;}
+form{display:inline-block;width:252px;}
+form .text{ width:194px; height:21px; border:#06a5ec solid 1px; border-radius:10px 0px 0px 10px; display:block;}
+form .button{ width:36px;height:23px;margin-top:15px;background:url(../img/searchbutton.gif)}
+
+nav{width:970px; height:50px; margin:0 auto;background-image:url(../img/nav.png);background-repeat:no-repeat;}
+nav{font-family:Microsoft Yahei;font-size:12px;}
+nav ul{margin-left:35px;padding:0; list-style:none;width:970px;height:40px;}
+nav ul li{float:left; text-align:center; line-height:45px; height:40px;width:90px; }
+nav ul li a{color:#FFF; text-decoration:none}
+nav ul li:hover{background:url(../img/navhover.png) center no-repeat;}
+
+.container{margin:0 auto; width:970px; height:auto; margin-top:10px}
+.slider{float:left;}
+.clear{clear:both;}
+
+.center{width:970px; height:271px; margin:0 auto; background-image:url(../img/bj.gif); margin-top:20px}
+.c-kecheng{width:360px; height:261px; float:left; margin-left:10px; margin-top:10px}
+.title-left{width:360px; height:85px;color:#a8d412} 
+.title-kecheng img{ margin-top:35px; line-height:85px}
+.buttonmore a img{float:right; margin-top:-15px}
+.kecheng{width:360px; height:176px}
+.kechenglist{width:360px; height:55px}
+.kechenglist img{float:left; margin-right:10px}
+.kechenglist a{color:#000; font-size:12px; text-decoration:none; }
+
+
+
+.c-news{width:280px; height:261px; float:left; margin-left:20px; margin-top:10px;}
+.title-middle{width:280px; height:85px;color:#a8d412} 
+.title-news img{ margin-top:35px; line-height:85px}
+
+.news{width:265px; height:32px;margin-top:5px;}
+.news p a{color:#06a5ec; font-size:12px; text-decoration:none; margin-left:15px;}
+
+   
+   
+.c-about{width:280px; height:261px; float:left; margin-left:20px; margin-top:10px}
+.title-right{width:270px; height:85px;} 
+.title-about img{ margin-top:35px; line-height:85px}
+
+
+.about{width:270px; height:176px; float:left }
+.about img{padding:10px; border:#f4f4f4 1px solid; float:left; border-radius:10px 10px 10px 10px} 
+.about-text{font-size:12px; line-height:25px }
+.about-text a{font-size:12px; color:#06a5ec; text-decoration:none}
+
+.center2{height:160px; margin:0 auto; margin-top:25px}
+.center2-left{width:348px; height:160px; float:left}
+.left-top{width:348px; height:30px}
+.top-a{float:left}
+.top-b{float:right;}
+.d{width:348px; height:110px; margin-top:20px}
+.d img{border:#f4f4f4 solid 1px; padding:3px; float:left}
+.rr{width:228px; height:110px; float:left; margin-left:15px}
+.r{width:228px; height:110px}
+.r a{text-decoration:none; color:#06a5ec}
+.r span{font-size:12px; line-height:20px}
+
+.center2-right{width:570px; height:160px; float:right}
+.right-t{width:567px; height:27px}
+.t-left{width:182px; height:27px; float:left}
+.t-r{width:71px; height:27px; float:right}
+.right-d{width:570px; height:133px}
+.d-left{width:50px; height:113px; float:left; }
+.d-left a img{ margin-top:13px; display:none }
+.d-left:hover img{display:block }
+.d-main{width:96px; height:113px;float:left}
+.d-main img{padding:5px; border:#f4f4f4 1px solid; margin-top:13px;}
+.d-main:hover img{border:#06a5ec 1px solid}
+.d-main span a{ color:#06a5ec; text-decoration:none; display:block; margin-left:15px}
+
+.d-right{width:40px; height:113px; float:right;}
+.d-right a img{ margin-top:13px; display:none }
+.d-right:hover img{display:block }
+
+.f-nav{width:968px; height:40px; margin:0 auto; margin-top:25px; background-image:url(../img/border.gif)}
+.f-nav span{float:left; font-size:12px; line-height:38px; margin-left:15px}
+.f-nav p{float:right;line-height:38px;color:#06a5ec; margin-left:20px}
+.f-nav p a{ color:#06a5ec; font-size:12px; font-weight:600; text-decoration:none; margin-right:20px;}
+
+.foot{width:528px; height:160px; margin:0 auto; margin-top:20px}
+.foot p{text-align:center; font-size:12px; font-weight:500; line-height:25px;}
+.foot p a{text-decoration:none; color:#06a5ec}
+.foot img{ margin-left:180px; margin-top:10px}
+
+
