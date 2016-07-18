@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<html><head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<script>
+	function isMobilePhone() {
+	
+		function getCookie(sName) {
+			var sCookies = document.cookie ;
+			if ("string" == typeof(sName)) {
+				var sRE = "(?:; )?"+sName+"=([^;]*);?" ;
+				var reRE = new RegExp(sRE) ;
+				if (reRE.test(sCookies)) {
+					return decodeURIComponent(RegExp["$1"]) ;
+				} else {
+					return null ;
+				}
+			} else {
+				return sCookies ;
+			}
+		}
+				
+		var pcPageTip = '您将要跳转到电脑版网页，会使用较多手机上网流量，是否继续？';
+		var cUrl = window.location.href;
+		var referrer = document.referrer;
+		var mIndex = '//m.jd.com/';
+		
+		var mFlag = window.location.hash, pcmFlag = getCookie('pcm');
+		
+		/*
+		if(mFlag == '#m'){
+			if (confirm(pcPageTip)) {
+				return;
+			}
+		}
+		*/
+		
+        var userAgent = navigator.userAgent;
+        console.log(userAgent);
+        if(userAgent){
+			userAgent = userAgent.toUpperCase();
+			if(userAgent.indexOf("PAD")>-1){
+                 return;
+            }
+			var mobilePhoneList = ["IOS","IPHONE","ANDROID","WINDOWS PHONE"];
+			for(var i=0,len=mobilePhoneList.length;i<len;i++){
+				if(userAgent.indexOf(mobilePhoneList[i])>-1){
+									
+											function isPcPage(url) {
+							var pcDomains = ['sale.jd.com', 'pinpaijie.jd.com', 'jrj.jd.com'];
+							for (var i = 0, len = pcDomains.length; i < len; i++) {
+								if (url.indexOf(pcDomains[i]) != -1) return true;
+							}
+							return false;
+						}
+						
+        				var mUrl = cUrl.replace(/sale\.jd\.com\/act/,'m.jd.com/sale/act');
+						
+						// no sale m & mc
+						if(isPcPage(mUrl) || mFlag == '#m' || pcmFlag == '1') {
+							if (confirm(pcPageTip)) {
+								return;
+							} else {
+								/*
+								if (referrer && referrer != '') {
+									if (referrer === cUrl) {
+										window.location.href = mIndex;
+										return;
+									} else {
+										window.location.href = referrer;
+										return;
+									}
+								} else {
+									window.location.href = mIndex;
+									return;
+								}
+								*/
+								window.location.href = mIndex;
+								return;
+							}
+						}
+						
+						// M page
+						if (mUrl.indexOf('m.jd.com') != -1) {
+							var tempUrl = cUrl.replace("//","");
+                            tempUrl = tempUrl.replace("http:","");
+                            tempUrl = tempUrl.replace("https:","");
+							var newmUrl = "//h5.m.jd.com/active/fastshop/index.html?url="+tempUrl;
+							window.location.href = newmUrl;
+							return;
+						}
+        							}
+             }
+         }
+     }
+	 
+	 
+			 isMobilePhone();
+	 </script>
+	    <!--JA统计-->
+	<script>var jdpts=new Object();jdpts._st=new Date().getTime();</script>
+    <meta content="京东美妆特卖-主页活动为您推荐当下最流行的品牌null,欢迎参加京东美妆特卖-主页" name="description">
+    <meta content="京东美妆特卖-主页,京东个护化妆活动,京东" name="keywords">
+	<title>
+							美妆特卖-主页 - 京东个护化妆专题活动-京东
+			</title>
+	<link rel="icon" href="http://www.jd.com/favicon.ico" mce_href="//www.jd.com/favicon.ico" type="image/x-icon">
+	
+		
+	<link rel="stylesheet" type="text/css" href="jd%E7%9A%84%E8%BF%94%E5%9B%9E%E9%A1%B6%E9%83%A8_files/a_002.css">
+    <link type="text/css" rel="stylesheet" href="jd%E7%9A%84%E8%BF%94%E5%9B%9E%E9%A1%B6%E9%83%A8_files/a.css">
+	<link rel="stylesheet" type="text/css" href="jd%E7%9A%84%E8%BF%94%E5%9B%9E%E9%A1%B6%E9%83%A8_files/a_003.css">	
+	
+	<script src="jd%E7%9A%84%E8%BF%94%E5%9B%9E%E9%A1%B6%E9%83%A8_files/jquery-1.js"></script>
+	<!--[if lte IE 7]><script type="text/javascript" src="//static.360buyimg.com/jshop/common/jquery/json2.js"></script><![endif]-->
+	<script type="text/javascript" src="jd%E7%9A%84%E8%BF%94%E5%9B%9E%E9%A1%B6%E9%83%A8_files/a_003.js"></script>
+	<script type="text/javascript" src="jd%E7%9A%84%E8%BF%94%E5%9B%9E%E9%A1%B6%E9%83%A8_files/a.js"></script>
+	
+    <style>
+		
+.single-place{position:absolute;bottom:0;left:0;}
+/*左右栏布局*/
+.right-left-mid-lay{overflow:hidden;zoom:1;}
+.right-left-left{width:190px;float:left;overflow:hidden;height:200px;margin-right:7px;padding-bottom:12px;position:relative;}
+.right-left-right-extra{float:right;width:789px;overflow:hidden;position:relative;padding-bottom:10px;height:200px;}
+.right-left-place{position:absolute;bottom:0;left:0;}
+/*左右栏布局*/
+.jBanner-159101 {overflow:hidden; position:relative;}
+.jBanner-159101 .j-module{zoom:1;}
+.jBanner-159101 .jbannerImg{position:relative; overflow:hidden;margin:0 auto;}
+.jBanner-159101 .jImgNodeArea{}
+.jBanner-159101 .jbannerImg dl{width:100%; position:relative; overflow:hidden; display:none;}
+.jBanner-159101 .jbannerImg dl.show{display:block;}
+.jBanner-159101 .jbannerImg img{display:block;}
+.jBanner-159101 .jbannerImg dd{width:100%; height:25px; position:absolute; bottom:0px; color:#fff; display:none;}
+.jBanner-159101 .jbannerImg a{display:block;}
+.jBanner-159101 .jbannerImg a:hover img{}
+.jBanner-159101 .jbannerImg dl.show img{filter:alpha(opacity=100); opacity:1;}
+.jBanner-159101 .jbannerImg dl.show dd{}
+.jBanner-159101 .jbannerTab{width:100%; height:28px; position:absolute; bottom:15px; overflow:hidden;}
+.jBanner-159101 .jbannerTab .jbannerThumbnail{text-align:center;}
+.jBanner-159101 .jbannerTab span, .jBanner-159101 .jbannerTab em{display:inline-block; *display:inline; zoom:1; vertical-align:middle;}
+.jBanner-159101 .jbannerTab span{width:28px; height:28px; background:url(//img12.360buyimg.com/cms/g17/M00/00/1D/rBEbR1Nq92UIAAAAAAAEFCDwPZEAAALlAP_-tAAAAQs512.png) center center no-repeat; cursor:pointer; text-indent:-9999px;}
+.jBanner-159101 .jbannerTab span.show{background-image:url(//img13.360buyimg.com/cms/g16/M00/00/1D/rBEbRlNq-AwIAAAAAAAEG0_VtEwAAALoQP_-tcAAAUp503.png);}
+.jBanner-159101 .jbannerTab em{height:20px; width:20px; cursor:pointer; display:none;}
+.jBanner-159101 .jPreOut{background:url(//img12.360buyimg.com/cms/g4/M02/07/01/rBEGFVApq9UIAAAAAAAD9gR0gbYAABYFwP_x8QAAAQO768.png) -10px -10px no-repeat;}
+.jBanner-159101 .jPreOver{background:url(//img12.360buyimg.com/cms/g4/M02/07/01/rBEGFVApq9UIAAAAAAAD9gR0gbYAABYFwP_x8QAAAQO768.png) -10px -50px no-repeat;}
+.jBanner-159101 .jNextOut{background:url(//img13.360buyimg.com/cms/g1/M01/07/01/rBEGD1Apq9EIAAAAAAAECTdZEjAAABYFgP_894AAAQh992.png) -10px -10px no-repeat;}
+.jBanner-159101 .jNextOver{background:url(//img13.360buyimg.com/cms/g1/M01/07/01/rBEGD1Apq9EIAAAAAAAECTdZEjAAABYFgP_894AAAQh992.png) -10px -50px no-repeat;}
+.userdefined-153704 .j-module{zoom:1; overflow:hidden;}
+.container h4{background:#fff;height:20px;padding-right:0px;}
+.container .shrink{width:20px;height:20px;background:url("//img14.360buyimg.com/cms/g14/M00/04/1C/rBEhVlHdGEUIAAAAAAAGCRctXCUAAA9BAP_9KUAAAYh058.png");float:right;margin-right:5px;}
+.container .shrink{background-position: -24px 0;}
+.container .extend{background-position:0 0;}
+.container .tips{background-position:0 -24px;width:88px;}
+
+    </style>		
+	<!-- 支持所有活动在IPAD上正常显示 -->
+	<script type="text/javascript">
+		if(/ipad/i.test(navigator.userAgent)){
+			if(!/safari/i.test(navigator.userAgent) || /jdapp/i.test(navigator.userAgent)){
+			 jQuery('head').append('<style>.d-pad{display:none;}</style');
+			}
+		}
+	</script>
+	
+	<!-- 京东主站相关 -->
+	<script type="text/javascript">window.pageConfig.compatible = true;</script>
+	<script type="text/javascript">
+		seajs.use('jdf/1.0.0/unit/globalInit/2.0.0/globalInit.js',function(globalInit){
+			globalInit();
+		});
+		//如果使用首页热搜词
+		seajs.use("jdf/1.0.0/unit/hotwords/1.0.0/hotwords",function(hotwords){
+			hotwords();
+		});
+	</script>
+	
+<style type="text/css">.jShareArea{display: none;position: absolute;width: 191px;background-color: #464646;padding-top: 3px;border-radius: 5px;overflow: hidden;z-index:200;}.jShareArea ul {padding-left: 5px;overflow: hidden;}.jShareArea li {float: left;margin: 3px 5px 3px 0;padding: 3px;width: 80px;text-align: center;cursor: pointer;border: solid 1px #464646;color: #bbb;}.jShareArea li:hover {box-shadow: 0 0 1px rgba(102,102,102,.9);border-radius: 2px;border-color: #363636;color: #fff;}.jShareArea li span {float: left;display: block;width: 16px;height: 16px;background: url(//img14.360buyimg.com/cms/g14/M03/07/07/rBEhVVHw12IIAAAAAAATGyPhlyEAABalQLZrLcAABMz254.gif);}.jShareArea .iconWeibo {background-position: 0 0;}.jShareArea .iconQQ {background-position: 0 -16px;}.jShareArea .icon163 {background-position: 0 -32px;}.jShareArea .iconRenren {background-position: 0 -48px;}.jShareArea .iconQzone {background-position: 0 -64px;}.jShareArea .iconMogujie {background-position: 0 -112px;}.jShareArea .iconKaixin {background-position: 0 -128px;}.jShareArea .iconDouban {background-position: 0 -144px;}.jShareArea li .jText {float: left;margin-left: 5px;font-style: normal;}</style></head>
+<body> 
+
+	<input id="JSHOP_CHANNEL_FLAG" value="jd" type="hidden">
+	<input value="438243" id="pageInstance_appId" type="hidden">
+	<input value="11650429" id="pageInstance_id" type="hidden">
+	<input id="layoutSortUrl" value="http://sale.jd.com/act/W7en8fHid1uOQUw.html" type="hidden">
+	<input id="moduleScript" value="&lt;script type=&quot;text/javascript&quot; moduleinit=&quot;module&quot; src=&quot;//sale.jd.com/jm.htm?js=/script/module/user-define/UserDefine.js,/script/module/banner/Banner.js,/script/module/side-panel/side-panel.js&amp;t=1604261738&quot;&gt;&lt;/script&gt;" type="hidden">
+	<input id="resourcePath" value="//static.360buyimg.com/jshop/sale-p/view/20151221110035/" type="hidden">
+    <input id="timestamp" value="201604212306" type="hidden">
+	<input id="testSidebar" value="test" type="hidden">
+	
+	<div class="d-pad">
+		<div id="shortcut-2014">
+	<div class="w">
+    	<ul class="fl">
+    		<li class="dorpdown" id="ttbar-mycity">			<div class="dt cw-icon ui-areamini-text-wrap" style="">				<i class="ci-right"><s>◇</s></i>				送至：<span title="北京" data-id="1" class="ui-areamini-text">北京</span> 			</div>			<div class="dd dorpdown-layer">				<div class="dd-spacer"></div>				<div class="ui-areamini-content-wrap"> 					<div class="ui-areamini-content"><div class="ui-areamini-content-list"><div class="item"><a class="selected" data-id="1" href="javascript:void(0)">北京</a></div><div class="item"><a data-id="2" href="javascript:void(0)">上海</a></div><div class="item"><a data-id="3" href="javascript:void(0)">天津</a></div><div class="item"><a data-id="4" href="javascript:void(0)">重庆</a></div><div class="item"><a data-id="5" href="javascript:void(0)">河北</a></div><div class="item"><a data-id="6" href="javascript:void(0)">山西</a></div><div class="item"><a data-id="7" href="javascript:void(0)">河南</a></div><div class="item"><a data-id="8" href="javascript:void(0)">辽宁</a></div><div class="item"><a data-id="9" href="javascript:void(0)">吉林</a></div><div class="item"><a data-id="10" href="javascript:void(0)">黑龙江</a></div><div class="item"><a data-id="11" href="javascript:void(0)">内蒙古</a></div><div class="item"><a data-id="12" href="javascript:void(0)">江苏</a></div><div class="item"><a data-id="13" href="javascript:void(0)">山东</a></div><div class="item"><a data-id="14" href="javascript:void(0)">安徽</a></div><div class="item"><a data-id="15" href="javascript:void(0)">浙江</a></div><div class="item"><a data-id="16" href="javascript:void(0)">福建</a></div><div class="item"><a data-id="17" href="javascript:void(0)">湖北</a></div><div class="item"><a data-id="18" href="javascript:void(0)">湖南</a></div><div class="item"><a data-id="19" href="javascript:void(0)">广东</a></div><div class="item"><a data-id="20" href="javascript:void(0)">广西</a></div><div class="item"><a data-id="21" href="javascript:void(0)">江西</a></div><div class="item"><a data-id="22" href="javascript:void(0)">四川</a></div><div class="item"><a data-id="23" href="javascript:void(0)">海南</a></div><div class="item"><a data-id="24" href="javascript:void(0)">贵州</a></div><div class="item"><a data-id="25" href="javascript:void(0)">云南</a></div><div class="item"><a data-id="26" href="javascript:void(0)">西藏</a></div><div class="item"><a data-id="27" href="javascript:void(0)">陕西</a></div><div class="item"><a data-id="28" href="javascript:void(0)">甘肃</a></div><div class="item"><a data-id="29" href="javascript:void(0)">青海</a></div><div class="item"><a data-id="30" href="javascript:void(0)">宁夏</a></div><div class="item"><a data-id="31" href="javascript:void(0)">新疆</a></div><div class="item"><a data-id="32" href="javascript:void(0)">台湾</a></div><div class="item"><a data-id="42" href="javascript:void(0)">香港</a></div><div class="item"><a data-id="43" href="javascript:void(0)">澳门</a></div><div class="item"><a data-id="84" href="javascript:void(0)">钓鱼岛</a></div><div class="item"><a href="http://en.jd.com/" target="_blank" data-onchange="1">海外</a></div></div></div> 				</div> 			</div>		</li>
+    	</ul>
+    	<ul class="fr">
+			<li class="fore1" id="ttbar-login"><a href="javascript:login();" class="link-login">你好，请登录</a>&nbsp;&nbsp;<a href="javascript:regist();" class="link-regist style-red">免费注册</a></li>
+			<li class="spacer"></li>
+			<li class="fore2">
+				<div class="dt">
+					<a target="_blank" href="http://order.jd.com/center/list.action">我的订单</a>
+				</div>
+			</li>
+			<li class="spacer"></li>
+			<li class="fore3 dorpdown" id="ttbar-myjd">
+				<div class="dt cw-icon">
+					<i class="ci-right"><s>◇</s></i>
+					<a target="_blank" href="http://home.jd.com/">我的京东</a>
+				</div>
+				<div class="dd dorpdown-layer"><div class="dd-spacer"></div><div class="dd-inner"><span class="loading"></span></div></div>
+			</li>
+			<li class="spacer"></li>
+			<li class="fore4">
+				<div class="dt">
+					<a target="_blank" href="http://vip.jd.com/">京东会员</a>
+				</div>
+			</li>
+			<li class="spacer"></li>
+			<li class="fore5">
+				<div class="dt">
+					<a target="_blank" href="http://b.jd.com/">企业采购</a>
+				</div>
+			</li>
+			<li class="spacer"></li>
+			<li aid="2_955_6342" class="fore6 dorpdown" id="ttbar-apps">
+				<div class="dt cw-icon">
+					<i class="ci-left"></i>
+					<i class="ci-right"><s>◇</s></i>
+					<a target="_blank" href="http://app.jd.com/">手机京东</a>
+				</div>
+						<div class="dd dorpdown-layer">				<div class="dd-spacer"></div>				<div class="dd-inner" id="ttbar-apps-main"><div class="dd-spacer"></div><div class="dd-inner"><span class="loading"></span></div>				</div>			</div>		</li>
+			<li class="spacer"></li>
+			<li aid="2_955_6494" class="fore7 dorpdown" id="ttbar-atte">
+				<div class="dt cw-icon">
+					<i class="ci-right"><s>◇</s></i>关注京东
+				</div>	
+						<div class="dd dorpdown-layer">				<div class="dd-spacer"></div>				<div class="dd-inner" id="ttbar-atte-main"><div class="dd-spacer"></div><div class="dd-inner"><span class="loading"></span></div>				</div>			</div>		</li>
+			<li class="spacer"></li>
+			<li class="fore8 dorpdown" id="ttbar-serv">
+				<div class="dt cw-icon">
+					<i class="ci-right"><s>◇</s></i>客户服务
+				</div>
+				<div class="dd dorpdown-layer"><div class="dd-spacer"></div><div class="dd-inner"><span class="loading"></span></div></div>
+			</li>
+			<li class="spacer"></li>
+			<li class="fore9 dorpdown" id="ttbar-navs">
+				<div class="dt cw-icon">
+					<i class="ci-right"><s>◇</s></i>网站导航
+				</div>
+				<div class="dd dorpdown-layer"><div class="dd-spacer"></div><div class="dd-inner"><span class="loading"></span></div></div>
+			</li>
+    	</ul>
+		<span class="clr"></span>
+    </div>
+</div>
+<div id="o-header-2013"><div id="header-2013" style="display:none;"></div></div>
+		<div class="w">
+    <div id="logo-2014">
+    	<a href="http://www.jd.com/" class="logo">京东</a>
+    </div>
+    <div id="search-2014">
+		<ul style="display: none;" id="shelper" class="hide"></ul>
+		<div class="form">
+			<input value="小龙虾" onkeydown="javascript:if(event.keyCode==13) search('key');" autocomplete="off" id="key" accesskey="s" class="text" type="text">
+			<button onclick="search('key');return false;" class="button cw-icon"><i></i>搜索</button>
+		</div>
+    </div>
+    <div id="settleup-2014" class="dorpdown">
+		<div class="cw-icon">
+			<i class="ci-left"></i>
+			<i class="ci-right">&gt;</i><i class="ci-count" id="shopping-amount">0</i>
+			<a target="_blank" href="http://cart.jd.com/cart/cart.html">我的购物车</a>
+		</div>
+		<div class="dorpdown-layer"><div class="spacer"></div><div id="settleup-content"><span class="loading"></span></div></div>
+	</div>
+    <div id="hotwords-2014"><a href="http://sale.jd.com/act/UEf32a5yduYc.html" target="_blank" class="style-red">乐视乐2</a><a href="http://sale.jd.com/act/WBNyJmIPYA.html" target="_blank">小电4免1</a><a href="http://sale.jd.com/act/Cxm8zXkBoIvSf.html" target="_blank">9.9免邮</a><a href="http://sale.jd.com/act/cF01dHXtCr6NIo2.html" target="_blank">春季拍卖</a><a href="http://sale.jd.com/act/BTIJeQDHkpU2Num.html" target="_blank">防晒喷雾</a><a href="http://zan.jd.com/" target="_blank">0元试用</a><a href="http://beauty.jd.com/brand.html" target="_blank">清仓</a><a href="http://youhuiquan.jd.com/" target="_blank">优惠券</a><a href="http://pinpaijie.jd.com/Intelligence.html" target="_blank">智能科技</a></div>
+    <span class="clr"></span>
+</div>
+<div id="nav-2014">
+    <div class="w">
+        <div class="w-spacer"></div>
+		<div style="height: auto; left: 0px; position: absolute;" id="categorys-2014" class="dorpdown" data-type="default">
+			<div class="dt">
+				<a target="_blank" href="http://www.jd.com/allSort.aspx">全部商品分类<i class="ci-right"><s>◇</s></i></a>
+			</div>
+		<div class="dd" style="display:none;"></div></div>
+		<div style="padding-left: 210px;" id="navitems-2014">
+			<ul id="navitems-group1">
+				<li id="nav-fashion" class="fore1">
+					<a target="_blank" href="http://channel.jd.com/fashion.html">服装城</a>
+				</li>
+				<li id="nav-beauty" class="fore2">
+					<a target="_blank" href="http://channel.jd.com/beauty.html">美妆馆</a>
+				</li>
+				<li id="nav-chaoshi" class="fore3">
+					<a target="_blank" href="http://channel.jd.com/chaoshi.html">超市</a>
+				</li>
+				<li id="nav-jdww" class="fore4">
+					<a target="_blank" href="http://www.jd.hk/">全球购</a>
+				</li>
+			</ul>
+			<div class="spacer"></div>
+			<ul id="navitems-group2">
+				<li id="nav-red" class="fore1">
+					<a target="_blank" href="http://red.jd.com/">闪购</a>
+				</li>
+				<li id="nav-tuan" class="fore2">
+					<a target="_blank" href="http://tuan.jd.com/">团购</a>
+				</li>
+				<li id="nav-auction" class="fore3">
+					<a target="_blank" href="http://paimai.jd.com/">拍卖</a>
+				</li>
+				<li id="nav-jr" class="fore4">
+					<a target="_blank" href="http://jr.jd.com/">金融</a>
+				</li>				
+			</ul>
+		</div>
+        <div id="treasure"></div>
+        <span class="clr"></span>
+    </div>
+</div>
+	</div>
+	
+	<div class="layoutcontainer" isfixed="" style="margin:0 auto;width:px; background: ">
+			
+	
+	
+      <div class="d-layout-area ">
+     <div class="d-layout" id="11733198">
+	<div class="d-layout-one w990 ">
+	 
+		 	</div>
+     </div>
+</div>
+
+	
+      <div class="d-layout-area   ">
+     <div class="d-layout" id="11650604" style="width:100%;">
+	<div class="d-layout-one  ">
+	 
+
+
+		<div class=" jBanner-159101" instanceid="11650605" style="margin-bottom: 10px;" module-name="Banner">
+
+		 <div class="mc" style=";min-height:0px;">
+		<div class="j-module" module-function="slide" module-param="{subFunction:'transparentEffect',timer:'', isAreaClick:false}">
+	<div class="jbannerImg" style="width: 1920px; height: 420px; margin-left: -285.5px;">
+		<div class="jImgNodeArea">
+										<dl style="opacity: 0;" class="" background="">
+				<dt><a href="http://sale.jd.com/act/LNCQnR2YkoG.html" target="_blank"><img style="" class="" src="jd%E7%9A%84%E8%BF%94%E5%9B%9E%E9%A1%B6%E9%83%A8_files/571867adN0b68f0d2.jpg" title="" height="420" width="1920"></a></dt>
+				<dd></dd>
+			</dl>
+			   		   							<dl style="opacity: 0;" class="" background="">
+				<dt><a href="http://sale.jd.com/act/DVyIKfpmOjvh6RnX.html" target="_blank"><img class="" src="jd%E7%9A%84%E8%BF%94%E5%9B%9E%E9%A1%B6%E9%83%A8_files/571062deN0cf892a6.jpg" title="" height="420" width="1920"></a></dt>
+				<dd></dd>
+			</dl>
+			   		   							<dl class="show" style="opacity: 0.0864597;" background="">
+				<dt><a href="http://sale.jd.com/act/BTIJeQDHkpU2Num.html" target="_blank"><img class="" src="jd%E7%9A%84%E8%BF%94%E5%9B%9E%E9%A1%B6%E9%83%A8_files/5716de16N1edd2582.jpg" title="" height="420" width="1920"></a></dt>
+				<dd></dd>
+			</dl>
+			   		   							<dl class="" style="opacity: 0;" background="">
+				<dt><a href="http://sale.jd.com/act/deyoEO8W1P0Fr.html" target="_blank"><img class="" src="jd%E7%9A%84%E8%BF%94%E5%9B%9E%E9%A1%B6%E9%83%A8_files/57186892N6e04b79a.jpg" title="" height="420" width="1920"></a></dt>
+				<dd></dd>
+			</dl>
+			   		   							<dl class="" style="opacity: 0;" background="">
+				<dt><a href="http://sale.jd.com/act/ZSAwOVejYr.html" target="_blank"><img class="" src="jd%E7%9A%84%E8%BF%94%E5%9B%9E%E9%A1%B6%E9%83%A8_files/571d86d7Nb0dead5e.jpg" title="" height="420" width="1920"></a></dt>
+				<dd></dd>
+			</dl>
+			   		   		</div>
+	</div>
+	<div class="jbannerTab">
+		<div class="jbannerThumbnail">
+			<em class="jPreOut"></em>
+															<span class="">1</span>
+			   		   									<span class="">2</span>
+			   		   									<span class="show">3</span>
+			   		   									<span class="">4</span>
+			   		   									<span class="">5</span>
+			   		   		   <em class="jNextOut"></em>
+		</div>
+	</div>
+</div>
+	 </div>
+	 </div>
+
+
+
+		<div class=" userdefined-153704" instanceid="11650606" style="margin-bottom: 10px;" module-name="UserDefine">
+
+		 <div class="mc" style=";min-height:0px;">
+		<div class="j-module" module-function="autoCenter,rid" module-param="{}">
+	<div class="userDefinedArea" style="width: 1920px; margin-left: -285.5px;">
+		<table id="__01" style="text-align: center;" border="0" cellpadding="0" cellspacing="0" width="1920"> 
+ <tbody> 
+  <tr> 
+   <td>
+    <div align="center"> 
+     <img class="" src="jd%E7%9A%84%E8%BF%94%E5%9B%9E%E9%A1%B6%E9%83%A8_files/5719b922Nd7d680f6.jpg" alt="" name="jinri" usemap="#Map" id="jinri" height="748" border="0" width="1920"> 
+    </div></td> 
+  </tr> 
+  <tr> 
+   <td>
+    <div align="center"> 
+     <img class="" src="jd%E7%9A%84%E8%BF%94%E5%9B%9E%E9%A1%B6%E9%83%A8_files/5719b922Na3f23c3f.jpg" alt="" usemap="#Map2" height="584" border="0" width="1920"> 
+    </div></td> 
+  </tr> 
+  <tr> 
+   <td><img class="" src="jd%E7%9A%84%E8%BF%94%E5%9B%9E%E9%A1%B6%E9%83%A8_files/57186534Nceecd0b9.jpg" alt="" name="chaojian" usemap="#Map3" id="chaojian" height="492" border="0" width="1920"></td> 
+  </tr> 
+  <tr> 
+   <td><img class="" src="jd%E7%9A%84%E8%BF%94%E5%9B%9E%E9%A1%B6%E9%83%A8_files/57186535N4a3ac02e.jpg" alt="" name="zhuanshu" usemap="#Map4" id="zhuanshu" height="476" border="0" width="1920"></td> 
+  </tr> 
+  <tr> 
+   <td>
+    <div align="center"> 
+     <img class="" src="jd%E7%9A%84%E8%BF%94%E5%9B%9E%E9%A1%B6%E9%83%A8_files/57186534N7488c126.jpg" alt="" name="baokuan" usemap="#Map5" id="baokuan" height="596" border="0" width="1920"> 
+    </div></td> 
+  </tr> 
+  <tr> 
+   <td>
+    <div align="center"> 
+     <img class="" src="jd%E7%9A%84%E8%BF%94%E5%9B%9E%E9%A1%B6%E9%83%A8_files/57186534N82d6211f.jpg" alt="" name="mianfei" usemap="#Map6" id="mianfei" height="294" border="0" width="1920"> 
+    </div></td> 
+  </tr> 
+  <tr> 
+   <td>
+    <div align="center"> 
+     <img class="" src="jd%E7%9A%84%E8%BF%94%E5%9B%9E%E9%A1%B6%E9%83%A8_files/57186535N32cb40f0.jpg" alt="" name="jizhi" usemap="#Map7" id="jizhi" height="490" border="0" width="1920"> 
+    </div></td> 
+  </tr> 
+  <tr> 
+   <td><img class="" src="jd%E7%9A%84%E8%BF%94%E5%9B%9E%E9%A1%B6%E9%83%A8_files/571865aeN5b550057.jpg" alt="" name="chaozi" usemap="#Map8" id="chaozi" height="660" border="0" width="1920"></td> 
+  </tr> 
+  <tr> 
+   <td><img class="" src="jd%E7%9A%84%E8%BF%94%E5%9B%9E%E9%A1%B6%E9%83%A8_files/571865aeN0cd5067e.jpg" alt="" name="meizhuang" usemap="#Map9" id="meizhuang" height="690" border="0" width="1920"></td> 
+  </tr> 
+ </tbody> 
+</table> 
+<div align="center"> 
+ <map name="Map"> <area shape="rect" coords="965,421,1457,740" href="http://item.jd.com/10030583019.html" target="_blank" clstag="sale|keycount|9941649|4"> <area shape="rect" coords="467,422,954,743" href="http://item.jd.com/259359.html" target="_blank" clstag="sale|keycount|9941649|3"> <area shape="rect" coords="963,90,1452,412" href="http://item.jd.com/2375747.html" target="_blank" clstag="sale|keycount|9941649|2"> <area shape="rect" coords="469,88,954,408" href="http://item.jd.com/1216388.html" target="_blank" clstag="sale|keycount|9941649|1"> </map> 
+ <map name="Map2"> <area shape="rect" coords="468,292,1454,568" href="http://mall.jd.com/index-1000002491.html" target="_blank" clstag="sale|keycount|9941649|6"> <area shape="rect" coords="465,5,1456,280" href="http://mall.jd.com/index-72479.html" target="_blank" clstag="sale|keycount|9941649|5"> </map> 
+ <map name="Map3"> <area shape="rect" coords="1133,80,1452,472" href="http://item.jd.com/10220573264.html" target="_blank" clstag="sale|keycount|9941649|9"> <area shape="rect" coords="805,85,1123,470" href="http://item.jd.com/234261.html" target="_blank" clstag="sale|keycount|9941649|8"> <area shape="rect" coords="466,84,789,472" href="http://item.jd.com/10227426852.html" target="_blank" clstag="sale|keycount|9941649|7"> </map> 
+ <map name="Map4"> <area shape="rect" coords="1134,82,1455,449" href="http://item.jd.com/1181977.html" target="_blank" clstag="sale|keycount|9941649|12"> <area shape="rect" coords="800,81,1120,453" href="http://item.jd.com/1897063.html" target="_blank" clstag="sale|keycount|9941649|11"> <area shape="rect" coords="467,79,784,451" href="http://item.jd.com/2318262.html" target="_blank" clstag="sale|keycount|9941649|10"> </map> 
+ <map name="Map5"> <area shape="rect" coords="1262,326,1451,576" href="http://item.jd.com/526447.html" target="_blank" clstag="sale|keycount|9941649|22"> <area shape="rect" coords="1066,327,1252,573" href="http://item.jd.com/1520616533.html" target="_blank" clstag="sale|keycount|9941649|21"> <area shape="rect" coords="868,328,1054,574" href="http://item.jd.com/2424094.html" target="_blank" clstag="sale|keycount|9941649|20"> <area shape="rect" coords="663,330,852,574" href="http://item.jd.com/323578.html" target="_blank" clstag="sale|keycount|9941649|19"> <area shape="rect" coords="468,329,653,573" href="http://item.jd.com/2422211.html" target="_blank" clstag="sale|keycount|9941649|18"> <area shape="rect" coords="1262,75,1454,322" href="http://item.jd.com/1746745.html" target="_blank" clstag="sale|keycount|9941649|17"> <area shape="rect" coords="1067,73,1252,321" href="http://item.jd.com/1060453.html" target="_blank" clstag="sale|keycount|9941649|16"> <area shape="rect" coords="864,71,1053,318" href="http://item.jd.com/1249662.html" target="_blank" clstag="sale|keycount|9941649|15"> <area shape="rect" coords="665,78,850,316" href="http://item.jd.com/1512972850.html" target="_blank" clstag="sale|keycount|9941649|14"> <area shape="rect" coords="466,79,652,318" href="http://item.jd.com/882282.html" target="_blank" clstag="sale|keycount|9941649|13"> </map> 
+ <map name="Map6"> <area shape="rect" coords="464,71,1449,272" href="http://sale.jd.com/act/LYQA1qldGzgIDRH0.html" target="_blank" clstag="sale|keycount|9941649|23"> </map> 
+ <map name="Map7"> <area shape="rect" coords="1276,429,1440,472" href="http://sale.jd.com/act/ahu4yHMg8RmZPL.html" target="_blank" clstag="sale|keycount|9941649|37"><area shape="rect" coords="1092,320,1266,421" href="http://sale.jd.com/act/eo2lVLhYQJ.html" target="_blank" clstag="sale|keycount|9941649|35"> <area shape="rect" coords="907,322,1084,421" href="http://sale.jd.com/act/k8wGJ0IsWOy6YP.html" target="_blank" clstag="sale|keycount|9941649|34"> <area shape="rect" coords="717,320,898,418" href="http://mall.jd.com/index-1000003706.html" target="_blank" clstag="sale|keycount|9941649|33"> <area shape="rect" coords="1276,214,1453,314" href="http://mall.jd.com/index-193448.html" target="_blank" clstag="sale|keycount|9941649|32"> <area shape="rect" coords="1089,217,1270,314" href="http://sansho.jd.com/" target="_blank" clstag="sale|keycount|9941649|31"> <area shape="rect" coords="904,214,1082,314" href="http://sale.jd.com/act/AthFIuecDYH.html" target="_blank" clstag="sale|keycount|9941649|30"> <area shape="rect" coords="715,214,899,315" href="http://sale.jd.com/act/2NwOd5ci3l1U.html" target="_blank" clstag="sale|keycount|9941649|29"> <area shape="rect" coords="1272,108,1458,212" href="http://sale.jd.com/act/xtJ3lmHqeskK.html" target="_blank" clstag="sale|keycount|9941649|28"> <area shape="rect" coords="1091,107,1268,211" href="http://mall.jd.com/index-1000009821.html" target="_blank" clstag="sale|keycount|9941649|27"> <area shape="rect" coords="902,106,1082,208" href="http://hanmasi.jd.com/" target="_blank" clstag="sale|keycount|9941649|26"> <area shape="rect" coords="720,105,897,209" href="http://crystalbeauty.jd.com/" target="_blank" clstag="sale|keycount|9941649|25"> <area shape="rect" coords="463,106,708,418" href="http://sale.jd.com/mall/WAJV3iv1IMK.html" target="_blank" clstag="sale|keycount|9941649|24"> <area shape="rect" coords="1271,320,1460,422" href="http://mall.jd.com/index-1000003218.html" target="_blank" clstag="sale|keycount|9967600|37"></map> 
+ <map name="Map8"> <area shape="rect" coords="1284,602,1441,643" href="http://sale.jd.com/act/tN5qyEbjBQvS.html" target="_blank" clstag="sale|keycount|9941649|41"> <area shape="rect" coords="468,96,951,589" href="http://sale.jd.com/act/tC3TidzNuYa.html" target="_blank" clstag="sale|keycount|9941649|40"> <area shape="rect" coords="965,353,1450,591" href="http://sale.jd.com/act/gR8BV1baY4D2HWz.html" target="_blank" clstag="sale|keycount|9941649|39"> <area shape="rect" coords="965,102,1448,345" href="http://sale.jd.com/act/GOlaQ584PMrhEyF2.html" target="_blank" clstag="sale|keycount|9941649|38"> </map> 
+ <map name="Map9"> <area shape="rect" coords="1280,603,1435,648" href="http://sale.jd.com/act/QiX0WGZ5DomE.html" target="_blank" clstag="sale|keycount|9941649|45"> <area shape="rect" coords="971,95,1454,591" href="http://sale.jd.com/act/sljCyEJLqf.html" target="_blank" clstag="sale|keycount|9941649|44"> <area shape="rect" coords="467,349,951,595" href="http://sale.jd.com/act/KLmOl5y3DBz.html" target="_blank" clstag="sale|keycount|9941649|43"> <area shape="rect" coords="469,97,951,342" href="http://sale.jd.com/act/ieEj2cOGpZ.html" target="_blank" clstag="sale|keycount|9941649|42"> </map>
+</div>
+	</div>
+</div>
+	 </div>
+	 </div>
+
+
+
+		<div class=" sidePanel-153707" instanceid="11650607" style="margin-bottom: 10px;" module-name="sidePanel">
+
+		 <div class="mc" style=";min-height:0px;">
+		 <div class="j-module" module-function="base" module-param="{height:420,top:0,width:120,horizontal:2,show:1 
+}">
+   <div style="left: 50%; margin-left: 505px; position: fixed; z-index: 7; top: 0px; overflow: hidden; height: 420px; width: 120px; display: block;" class="J-container">
+<!-- Save for Web Slices (侧栏.psd) -->
+<img class="" src="jd%E7%9A%84%E8%BF%94%E5%9B%9E%E9%A1%B6%E9%83%A8_files/568dc838Nc93caa6a.jpg" alt="" usemap="#Map5543638" height="420" border="0" width="120">
+<map name="Map5543638"> 
+	<area shape="rect" coords="12,375,102,403" href="#" target="_top" clstag="sale|keycount|9966784|9"> 
+	<area shape="rect" coords="9,335,107,362" href="#meizhuang" clstag="sale|keycount|9966784|8">
+	 <area shape="rect" coords="7,295,110,320" href="#chaozi" clstag="sale|keycount|9966784|7"> 
+	 <area shape="rect" coords="12,259,105,288" href="#jizhi" clstag="sale|keycount|9966784|6"> 
+	 <area shape="rect" coords="13,220,102,253" href="#mianfei" clstag="sale|keycount|9966784|5">
+	  <area shape="rect" coords="8,183,111,208" href="#baokuan" clstag="sale|keycount|9966784|4"> 
+	  <area shape="rect" coords="14,144,103,175" href="#zhuanshu" clstag="sale|keycount|9966784|3">
+	   <area shape="rect" coords="16,109,100,133" href="#chaojian" clstag="sale|keycount|9966784|2">
+	    <area shape="rect" coords="19,70,102,102" href="#jinri" clstag="sale|keycount|9966784|1"></map>
+<!-- End Save for Web Slices -->
+</div>
+</div>
+	 </div>
+	 </div>
+
+		 	</div>
+     </div>
+</div>
+
+      <div class="d-layout-area ">
+     <div class="d-layout" id="11650608">
+	<div class="d-layout-one w990 ">
+	 
+
+
+		<div class=" userdefined-153704" instanceid="11650609" style="margin-bottom: 10px;" module-name="UserDefine">
+
+		 <div class="mc" style=";min-height:0px;">
+		<div class="j-module" module-function="autoCenter,rid" module-param="{}">
+	<div class="userDefinedArea" style="width: auto; margin: 0px auto;">
+		<img class="" src="jd%E7%9A%84%E8%BF%94%E5%9B%9E%E9%A1%B6%E9%83%A8_files/57158921N1dc1c1dc.jpg" alt="" usemap="#Mapkfeobmq0" height="160" border="0" width="990">
+<map name="Mapkfeobmq0"> <area shape="rect" coords="212,9,407,129" href="http://baitiao.jd.com/" target="_blank" clstag="sale|keycount|11488275|1"> <area shape="rect" coords="417,10,654,122" href="http://baitiao.jd.com/" target="_blank" clstag="sale|keycount|11488275|2"></map>
+	</div>
+</div>
+	 </div>
+	 </div>
+
+		 	</div>
+     </div>
+</div>
+
+<div class="d-layout-area  ">
+     <div class="d-layout" name="左右栏布局（190x790)" id="11650610" area="body" layout_name="insertLayout">
+	  <div class="d-layout-two-left w190 ">
+		 
+		 	  </div>
+	  <div class="d-layout-two-right w790 ">	
+		
+		 	  </div>
+     </div>
+</div>
+
+<div class="d-layout-area  ">
+     <div class="d-layout" name="左右栏布局（190x790)" id="11650611" area="body" layout_name="insertLayout">
+	  <div class="d-layout-two-left w190 ">
+		 
+		 	  </div>
+	  <div class="d-layout-two-right w790 ">	
+		
+		 	  </div>
+     </div>
+</div>
+
+      <div class="d-layout-area   ">
+     <div class="d-layout" id="11650612" style="width:100%;">
+	<div class="d-layout-one  ">
+	 
+		 	</div>
+     </div>
+</div>
+
+	
+
+	
+<!-- add by zhaohongbo -->
+<!-- 活动页面参数向下传递 -->
+<script>
+    (function() {
+        var jHref = $("a[href*='//'], area[href*='//']"), search = location.search;
+        jHref.each(function() {
+            var _this = $(this);
+            var href = _this.attr("href"), h = href, anchor = '';
+            if (href.indexOf('#') != -1) {
+                href = href.substring(0, href.indexOf('#'));
+                anchor = h.substring(h.indexOf('#'));
+            }
+
+            var arrUrl = href.split('?');
+            if(arrUrl.length === 1) {
+                _this.attr("href", href + search + anchor);
+            } else {
+                _this.attr("href", href + "&" + search.substring(1) + anchor);
+            }
+        });
+    })()
+</script>					<div align="center">
+				
+			</div>
+									<div style="text-align:center;" class="d-pad">
+        		<a target="_blank" title="" href="http://c-nfa.jd.com/adclick?keyStr=z5AXFoIimt1jiDK32+w4mYhm0X76xynWc1dOV2nYzUVWK/th/uWWA2XSXhck8cTXiYO1izhl4VIYVFjZo0vru4urrglXtSZpBlRu2pQv+QVa4eG9P+LQ+i7XDdn0nvJzdpxRtfXYZ/DWOhhyf1NAAlY18uDd8x3Oh0wSJD86w9LfRdpiJU5r3bwEabXOtwmEv89lo8JRD6NVFvDSOasUZ/P+lipwPkmdwMRCFiKaICK4ZsYdmNwFPV1K1ZyWNA0WmjZWEeqvOPYT9OmyFbzAK1roh0lSNMgpGbDBSzIrkVJcGSICYTUNkHz/koBe+MjxFq6wPRsAJ/Dzmfmra9QIAg==&amp;cv=2.0&amp;url=https://sale.jd.com/act/FChGjnY5byzqZI.html?cpdad=1DLSUE"><img alt="" src="jd%E7%9A%84%E8%BF%94%E5%9B%9E%E9%A1%B6%E9%83%A8_files/5705483eN56593028.png" height="74" width="990"></a>
+
+            </div>
+							<div id="jshop-mobile-advertise" style="position: fixed; bottom: 10px; right: 50%; margin-right: 505px;">
+	
+</div>
+<script type="text/javascript">
+	if(jQuery.browser.msie&&jQuery.browser.version.match(/6\.0/g)){
+		var __original_top = $(window).height() - 90;
+		$('#jshop-mobile-advertise').css({
+			position : 'absolute',
+			top : __original_top + 'px'
+		});
+		$(window).bind('scroll resize',function(){
+			$('#jshop-mobile-advertise').css('top',$(this).scrollTop() + __original_top + 'px');
+		});
+	}			
+	$('#jshop-mobile-advertise').css({
+		right : '50%',
+		marginRight : '505px'
+	});
+</script>			 </div>
+	 <div class="d-price-tips" style="padding:20px 0; text-align:center; font-size:14px; line-height:16px;"><em style="display:inline-block; vertical-align:middle; width:16px; height:16px; margin-right:5px; background:url(//img11.360buyimg.com/cms/jfs/t2125/60/2123383296/1541/97f969bc/56b197daNefbff474.gif)"></em>因可能存在系统缓存、页面更新导致价格变动异常等不确定性情况出现，如您发现活动商品标价或促销信息有异常，请您立即联系我们，以便我们及时补正。</div>
+	<div class="d-pad">
+		<div id="service-2014">
+	<div class="slogen">
+		<span class="item fore1">
+			<i></i><b>多</b>品类齐全，轻松购物
+		</span>
+		<span class="item fore2">
+			<i></i><b>快</b>多仓直发，极速配送
+		</span>
+		<span class="item fore3">
+			<i></i><b>好</b>正品行货，精致服务
+		</span>
+		<span class="item fore4">
+			<i></i><b>省</b>天天低价，畅选无忧
+		</span>
+	</div>
+	<div class="w">
+		<dl class="fore1">
+			<dt>购物指南</dt>
+			<dd>
+				<div><a rel="nofollow" target="_blank" href="http://help.jd.com/user/issue/list-29.html">购物流程</a></div>
+				<div><a rel="nofollow" target="_blank" href="http://help.jd.com/user/issue/list-151.html">会员介绍</a></div>
+				<div><a rel="nofollow" target="_blank" href="http://help.jd.com/user/issue/list-297.html">生活旅行/团购</a></div>
+				<div><a rel="nofollow" target="_blank" href="http://help.jd.com/user/issue.html">常见问题</a></div>
+				<div><a rel="nofollow" target="_blank" href="http://help.jd.com/user/issue/list-136.html">大家电</a></div>
+				<div><a rel="nofollow" target="_blank" href="http://help.jd.com/user/index.html">联系客服</a></div>
+			</dd>
+		</dl>
+		<dl class="fore2">		
+			<dt>配送方式</dt>
+			<dd>
+				<div><a rel="nofollow" target="_blank" href="http://help.jd.com/user/issue/list-81-100.html">上门自提</a></div>
+				<div><a rel="nofollow" target="_blank" href="http://help.jd.com/user/issue/list-81.html">211限时达</a></div>
+				<div><a rel="nofollow" target="_blank" href="http://help.jd.com/user/issue/103-983.html">配送服务查询</a></div>
+				<div><a rel="nofollow" target="_blank" href="http://help.jd.com/user/issue/109-188.html">配送费收取标准</a></div>				
+				<div><a target="_blank" href="http://en.jd.com/chinese.html">海外配送</a></div>
+			</dd>
+		</dl>
+		<dl class="fore3">
+			<dt>支付方式</dt>
+			<dd>
+				<div><a rel="nofollow" target="_blank" href="http://help.jd.com/user/issue/list-172.html">货到付款</a></div>
+				<div><a rel="nofollow" target="_blank" href="http://help.jd.com/user/issue/list-173.html">在线支付</a></div>
+				<div><a rel="nofollow" target="_blank" href="http://help.jd.com/user/issue/list-176.html">分期付款</a></div>
+				<div><a rel="nofollow" target="_blank" href="http://help.jd.com/user/issue/list-174.html">邮局汇款</a></div>
+				<div><a rel="nofollow" target="_blank" href="http://help.jd.com/user/issue/list-175.html">公司转账</a></div>
+			</dd>
+		</dl>
+		<dl class="fore4">		
+			<dt>售后服务</dt>
+			<dd>
+				<div><a rel="nofollow" target="_blank" href="http://help.jd.com/user/issue/321-981.html">售后政策</a></div>
+				<div><a rel="nofollow" target="_blank" href="http://help.jd.com/user/issue/list-132.html">价格保护</a></div>
+				<div><a rel="nofollow" target="_blank" href="http://help.jd.com/user/issue/130-978.html">退款说明</a></div>
+				<div><a rel="nofollow" target="_blank" href="http://myjd.jd.com/repair/repairs.action">返修/退换货</a></div>
+				<div><a rel="nofollow" target="_blank" href="http://help.jd.com/user/issue/list-50.html">取消订单</a></div>
+			</dd>
+		</dl>
+		<dl class="fore5">
+			<dt>特色服务</dt>
+			<dd>		
+				<div><a target="_blank" href="http://help.jd.com/user/issue/list-133.html">夺宝岛</a></div>
+				<div><a target="_blank" href="http://help.jd.com/user/issue/list-134.html">DIY装机</a></div>
+				<div><a rel="nofollow" target="_blank" href="http://fuwu.jd.com/">延保服务</a></div>
+				<div><a rel="nofollow" target="_blank" href="http://giftcard.jd.com/market/index.action">京东E卡</a></div>				
+				<div><a rel="nofollow" target="_blank" href="http://mobile.jd.com/">京东通信</a></div>
+				<div><a rel="nofollow" target="_blank" href="http://s.jd.com/">京东JD+</a></div>
+			</dd>
+		</dl>
+		<span class="clr"></span>
+	</div>
+</div>
+		<div class="w">
+	<div id="footer-2014">
+		<div class="links">
+			<a rel="nofollow" target="_blank" href="http://www.jd.com/intro/about.aspx">关于我们</a>|<a rel="nofollow" target="_blank" href="http://www.jd.com/contact/">联系我们</a>|<a rel="nofollow" target="_blank" href="http://www.jd.com/contact/joinin.aspx">商家入驻</a>|<a rel="nofollow" target="_blank" href="http://jzt.jd.com/">营销中心</a>|<a rel="nofollow" target="_blank" href="http://app.jd.com/">手机京东</a>|<a target="_blank" href="http://club.jd.com/links.aspx">友情链接</a>|<a target="_blank" href="http://media.jd.com/">销售联盟</a>|<a href="http://club.jd.com/" target="_blank">京东社区</a>|<a href="http://gongyi.jd.com/" target="_blank">京东公益</a>|<a href="http://en.jd.com/" target="_blank">English Site</a>|<a href="http://en.jd.com/help/question-58.html" target="_blank">Contact Us</a>
+		</div>
+		<div class="copyright">
+			北京市公安局朝阳分局备案编号110105014669&nbsp;&nbsp;|&nbsp;&nbsp;京ICP证070359号&nbsp;&nbsp;|&nbsp;&nbsp;<a target="_blank" href="http://img14.360buyimg.com/da/jfs/t256/349/769670066/270505/3b03e0bb/53f16c24N7c04d9e9.jpg">互联网药品信息服务资格证编号(京)-经营性-2014-0008</a>&nbsp;&nbsp;|&nbsp;&nbsp;新出发京零&nbsp;字第大120007号<br><a rel="nofollow" href="http://misc.360buyimg.com/skin/df/i/com/f_music.jpg" target="_blank">音像制品经营许可证苏宿批005号</a>&nbsp;&nbsp;|&nbsp;&nbsp;出版物经营许可证编号新出发(苏)批字第N-012号&nbsp;&nbsp;|&nbsp;&nbsp;互联网出版许可证编号新出网证(京)字150号<br><a href="http://misc.360buyimg.com/wz/wlwhjyxkz.jpg" target="_blank">网络文化经营许可证京网文[2014]2148-348号</a>&nbsp;&nbsp;违法和不良信息举报电话：4006561155&nbsp;&nbsp;Copyright&nbsp;©&nbsp;2004-2016&nbsp;&nbsp;京东JD.com&nbsp;版权所有<br>京东旗下网站：<a target="_blank" href="http://www.360top.com/">360TOP</a>&nbsp;&nbsp;<a href="http://www.paipai.com/" target="_blank">拍拍网</a>&nbsp;&nbsp;<a href="https://www.wangyin.com/" target="_blank">网银在线</a>
+		</div>
+		
+		<div class="authentication">
+			<a rel="nofollow" target="_blank" href="http://www.hd315.gov.cn/beian/view.asp?bianhao=010202007080200026">
+				<img alt="经营性网站备案中心" src="jd%E7%9A%84%E8%BF%94%E5%9B%9E%E9%A1%B6%E9%83%A8_files/54b8871eNa9a7067e.png" height="32" width="103">
+			</a>
+			<script type="text/JavaScript">function CNNIC_change(eleId){var str= document.getElementById(eleId).href;var str1 =str.substring(0,(str.length-6));str1+=CNNIC_RndNum(6); document.getElementById(eleId).href=str1;}function CNNIC_RndNum(k){var rnd=""; for (var i=0;i < k;i++) rnd+=Math.floor(Math.random()*10); return rnd;}</script>
+			<a rel="nofollow" target="_blank" id="urlknet" tabindex="-1" href="https://ss.knet.cn/verifyseal.dll?sn=2008070300100000031&amp;ct=df&amp;pa=294005">
+				<img onclick="CNNIC_change('urlknet')" oncontextmenu="return false;" name="CNNIC_seal" alt="可信网站" src="jd%E7%9A%84%E8%BF%94%E5%9B%9E%E9%A1%B6%E9%83%A8_files/54b8872dNe37a9860.png" height="32" border="true" width="103">
+			</a>
+			<a rel="nofollow" target="_blank" href="http://www.bj.cyberpolice.cn/index.do">
+				<img alt="朝阳网络警察" src="jd%E7%9A%84%E8%BF%94%E5%9B%9E%E9%A1%B6%E9%83%A8_files/54b8874bN694454a5.png" height="32" width="103">
+			</a>
+			<a rel="nofollow" target="_blank" href="https://search.szfw.org/cert/l/CX20120111001803001836">
+				<img src="jd%E7%9A%84%E8%BF%94%E5%9B%9E%E9%A1%B6%E9%83%A8_files/54b8875fNad1e0c4c.png" height="32" width="103">
+			</a>
+			<a target="_blank" href="http://jubao.china.cn:13225/reportform.do">
+				<img src="jd%E7%9A%84%E8%BF%94%E5%9B%9E%E9%A1%B6%E9%83%A8_files/54b8863dN8d2c61ec.png" height="32" width="185">
+			</a>
+		</div>
+	</div>
+</div>
+	</div>
+	
+	<!--201509 by cdwanchuan-->
+	<script type="text/javascript" src="jd%E7%9A%84%E8%BF%94%E5%9B%9E%E9%A1%B6%E9%83%A8_files/a_006.js"></script>
+	<script type="text/javascript" src="jd%E7%9A%84%E8%BF%94%E5%9B%9E%E9%A1%B6%E9%83%A8_files/a_004.js"></script>
+	<script src="jd%E7%9A%84%E8%BF%94%E5%9B%9E%E9%A1%B6%E9%83%A8_files/entrance.js"></script>
+	<script src="jd%E7%9A%84%E8%BF%94%E5%9B%9E%E9%A1%B6%E9%83%A8_files/a_002.js"></script>
+		<script language="javascript" src="jd%E7%9A%84%E8%BF%94%E5%9B%9E%E9%A1%B6%E9%83%A8_files/a_005.js"></script>
+				<script id="jshopSidebar" src="jd%E7%9A%84%E8%BF%94%E5%9B%9E%E9%A1%B6%E9%83%A8_files/sidebar.js" type="text/javascript" charset="UTF-8"></script>
+<img src="jd%E7%9A%84%E8%BF%94%E5%9B%9E%E9%A1%B6%E9%83%A8_files/pre.gif" style="display:none;" height="1" width="1">		<script type="text/javascript" src="jd%E7%9A%84%E8%BF%94%E5%9B%9E%E9%A1%B6%E9%83%A8_files/wl.js"></script>
+
+
+	<!--京东主站相关-->
+      
+<link href="jd%E7%9A%84%E8%BF%94%E5%9B%9E%E9%A1%B6%E9%83%A8_files/sidebar.css" rel="stylesheet" type="text/css"><div class="s-jd-toolbar s-small-screen s-show">  <span class="s-icon-more" title="" clstag="jshopmall|keycount|jsdcblan|jsa21"></span><div style="margin-top: 87.5px;" class="s-icon-list">       <div class="s-header" data-widget="s-header"> <span style="height: 87.5px;" class="s-mt s-icon-header" data-before="活动大促"></span>    <div class="s-mc">   <div class="s-list">      </div>      </div>   </div>  <div class="s-order" data-widget="s-order"> <span class="s-mt s-icon-order" data-before="我的订单" clstag="jshopmall|keycount|jsdcblan|jsa1"><em></em></span>    <div class="s-mc">   <div class="s-user-info"><span class="s-img"><img src="jd%E7%9A%84%E8%BF%94%E5%9B%9E%E9%A1%B6%E9%83%A8_files/16.jpg" height="70" width="70"></span><span class="s-name">Hi，<em></em></span><span class="s-level"></span></div><div class="s-mt-sub">我的订单</div>     <div class="s-list">      <div class="s-tips">       <span>您还没有订单哦！</span>赶快到<a href="http://www.jd.com/" target="_blank">京东首页</a>看看吧！      </div> <ul class="s-li-con"></ul><a href="http://order.jd.com/" target="_blank" class="s-btn" clstag="jshopmall|keycount|jsdcblan|jsa3">查看全部订单</a></div>      <div class="s-track-list"><span class="s-close" title="关闭"></span><table><thead><tr><th width="65">处理时间</th><th>处理信息</th></tr></thead></table><div class="s-list-area"><table><tbody></tbody></table></div></div> </div>   </div>  <div class="s-attention" data-widget="s-attention">    <span class="s-mt s-icon-attention" data-before="我的关注" clstag="jshopmall|keycount|jsdcblan|jsa4"><em></em></span>    <div class="s-mc">     <div class="s-mt-sub">我的关注     </div>     <div class="s-list">      <div class="s-tab">       <a href="javascript:void(0)" class="s-first-child s-current">商品</a><a href="javascript:void(0)">店铺</a><a href="javascript:void(0)">活动</a>      </div>      <div class="s-con">       <div class="s-tab-con s-goods s-current">        <div class="s-tips">         <span>您还没关注任何商品哦！</span>赶快到<a href="http://www.jd.com/" target="_blank">京东首页</a>看看吧！        </div>        <ul class="s-li-con">        </ul>       </div>       <div class="s-tab-con s-mall">        <div class="s-tips">         <span>您还没关注任何店铺哦！</span>赶快到<a href="http://www.jd.com/" target="_blank">京东首页</a>看看吧！        </div>        <ul class="s-li-con">        </ul>       </div>       <div class="s-tab-con s-sale">        <div class="s-tips">         <span>您还没关注任何活动哦！</span>赶快到<a href="http://www.jd.com/" target="_blank">京东首页</a>看看吧！        </div>        <ul class="s-li-con">        </ul>       </div>      </div>     </div>    </div>   </div>   <div class="s-coupon" data-widget="s-coupon">    <span class="s-mt s-icon-coupon" data-before="我的优惠券" clstag="jshopmall|keycount|jsdcblan|jsa9"><em></em></span>    <div class="s-mc"><div class="s-list"> <div class="s-asset">       <span class="s-first-child">余额<em class="s-balance-num">0</em></span><span>京豆<em class="s-beans-num">0</em></span><span>优惠券<em class="s-coupon-num">0</em></span>      </div>      <div class="s-tips">       <span>您还没有优惠券哦！</span>赶快到<a href="http://www.jd.com/" target="_blank">京东首页</a>看看吧！      </div>      <ul class="s-li-con">      </ul>     </div>    </div>   </div>   <div class="s-records" data-widget="s-records">    <span class="s-mt s-icon-records" data-before="我的足迹" clstag="jshopmall|keycount|jsdcblan|jsa14"><em></em></span>    <div class="s-mc">     <div class="s-mt-sub">我的足迹</div>     <div class="s-total">我浏览过的<em></em>件商品</div>     <div class="s-list">      <div class="s-tips">       <span>您还没留下足迹哦！</span>赶快到<a href="http://www.jd.com/" target="_blank">京东首页</a>看看吧！      </div>      <ul class="s-li-con">      </ul>     </div>    </div>   </div> <div class="s-jimi" data-widget="s-jimi">    <span class="s-mt s-icon-jimi" data-before="我的JIMI" clstag="jshopmall|keycount|jsdcblan|jsa17"><em></em></span>    <div class="s-mc">     <div class="s-mt-sub">我的JIMI</div>       <div class="s-list">        </div>    </div>   </div><div class="s-im" data-widget="s-im">    <span class="s-mt s-icon-im" data-before="联系卖家" clstag="jshopmall|keycount|jsdcblan|jsa23"><em></em></span>    <div class="s-mc"></div></div><div class="s-cart" data-widget="s-cart">    <span class="s-mt s-icon-cart" data-before="我的购物车" clstag="jshopmall|keycount|jsdcblan|jsa11"><em></em><span class="s-cart-text">购物车</span><span class="s-cart-num">0</span></span>    <div class="s-mc">     <div class="s-mt-sub">      我的购物车     </div>     <div class="s-list">      <div class="s-tips">       <span>您的购物车还是空的哦！</span>赶快到<a href="http://www.jd.com/" target="_blank">京东首页</a>看看吧！      </div>      <ul class="s-li-con">      </ul>      <div class="s-addtocart">       <div class="s-total">        <span>共<span class="s-num">0</span>件商品</span>&nbsp;&nbsp;<span>共计<span class="s-price">¥<em>0.00</em></span></span>       </div>       <a href="http://cart.jd.com/cart/cart.html" target="_blank" class="s-btn" clstag="jshopmall|keycount|jsdcblan|jsa13">去购物车结算</a>      </div>     </div>    </div>   </div> </div><!-- 附属图标列表 --><div class="s-icon-extra"><div class="s-extra-3d" data-widget="s-extra-3d">    <span class="s-mt s-icon-extra-3d" data-before="3D店铺" clstag="jshopmall|keycount|jsdcblan|jsa22" id="usage3D_iconTd"><em></em></span>    <div class="s-mc"></div></div><div class="s-extra-share" data-widget="s-extra-share"><span class="s-mt s-icon-extra-share" data-before="分享" clstag="jshopmall|keycount|jsdcblan|jsa19"><em></em></span><div class="s-mc"><div class="s-share-area"><div class="jQrCodeArea"><div class="qrWrap"><p class="qrPic"></p><p class="qrDesc">微信扫码享优惠</p></div></div></div></div></div><div class="s-extra-attention" data-widget="s-extra-attention">    <span class="s-mt s-icon-extra-attention" data-before="加关注" data-id="438243" data-state="0" data-type="0" clstag="jshopmall|keycount|jsdcblan|jsa18"><em></em></span>    <div class="s-mc"></div></div><div class="s-extra-favorite" data-widget="s-extra-favorite"><span class="s-mt s-icon-extra-favorite" data-before="收藏"><em></em></span><div class="s-mc"></div></div><div style="display: block;" class="s-extra-totop" data-widget="s-extra-totop"><span class="s-mt s-icon-extra-totop" data-before="返回顶部" clstag="jshopmall|keycount|jsdcblan|jsa20"><em></em></span><div class="s-mc"></div></div> </div></div></body></html>
