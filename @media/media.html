@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+<meta charset="utf-8" />
+<title>@media_CSS参考手册_web前端开发参考手册系列</title>
+<meta name="author" content="" />
+<meta name="copyright" content="" />
+<style>
+body{background:#000}
+.test,.test2{width:100px;height: 100px;background: #fff;}
+
+@media (min-width: 568px) and (max-width:768px) {.test,.test2{width:100px;height: 100px;background: #fff;} body{background:gray; }}
+@media (min-width: 768px)						{.test,.test2{width:200px;height: 100px;background: #fff;} body{background:green; }}
+
+@media (min-width: 992px)						{.test,.test2{width:300px;height: 100px;background: #fff;} body{background:red; }}
+
+@media (min-width: 1200px)						{.test,.test2{width:400px;height: 100px;background: #fff;} body{background:yellow; }}
+}
+</style>
+</head>
+<body>
+<div>Media Queries媒体查询</div>
+<div class="test">
+		媒体查询，响应到宽度去 修改body的颜色	
+		
+</div>
+<div class="test2">
+		
+@media (min-width: 768px){ //>=768的设备 }
+
+@media (min-width: 992px){ //>=992的设备 }
+
+@media (min-width: 1200){ //>=1200的设备 }
+
+注意下顺序，如果你把@media (min-width: 768px)写在了下面那么很悲剧，
+
+@media (min-width: 1200){ //>=1200的设备 }
+
+@media (min-width: 992px){ //>=992的设备 }
+
+@media (min-width: 768px){ //>=768的设备 }
+
+因为如果是1440,由于1440>768那么你的1200就会失效。
+
+所以我们用min-width时，小的放上面大的在下面，同理如果是用max-width那么就是大的在上面，小的在下面
+
+@media (max-width: 1199){ //<=1199的设备 }
+
+@media (max-width: 991px){ //<=991的设备 }
+
+@media (max-width: 767px){ //<=768的设备 }
+</div>
+</body>
+</html>
+			
