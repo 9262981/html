@@ -4,17 +4,81 @@
 	<meta charset="UTF-8">
 	<title>Document</title>
 	<style>
-		img{width:300px;height:200px;transition: all 2s ease-in-out 2s;}
+		img{width:300px;height:200px;transition: all 2s ease-in-out 1s;}
 		img:hover{
 			width: 500px;
 			height:400px;
 		}
+
+		div
+		{
+			width:100px;
+			height:50px;
+			background:red;
+			color:white;
+			font-weight:bold;
+			transition:width 2s;
+			-webkit-transition:width 2s; /* Safari */
+		}
+		#div1 {transition-timing-function: linear;}
+		#div2 {transition-timing-function: ease;}
+		#div3 {transition-timing-function: ease-in;}
+		#div4 {transition-timing-function: ease-out;}
+		#div5 {transition-timing-function: ease-in-out;}
+
+		/* Safari */
+		#div1 {-webkit-transition-timing-function: linear;}
+		#div2 {-webkit-transition-timing-function: ease;}
+		#div3 {-webkit-transition-timing-function: ease-in;}
+		#div4 {-webkit-transition-timing-function: ease-out;}
+		#div5 {-webkit-transition-timing-function: ease-in-out;}
+
+		/*
+		#div1 {transition-timing-function: cubic-bezier(0,0,0.25,1);}
+		#div2 {transition-timing-function: cubic-bezier(0.25,0.1,0.25,1);}
+		#div3 {transition-timing-function: cubic-bezier(0.42,0,1,1);}
+		#div4 {transition-timing-function: cubic-bezier(0,0,0.58,1);}
+		#div5 {transition-timing-function: cubic-bezier(0.42,0,0.58,1);}
+
+		/* Safari */
+	/*	#div1 {-webkit-transition-timing-function: cubic-bezier(0,0,0.25,1);}
+		#div2 {-webkit-transition-timing-function: cubic-bezier(0.25,0.1,0.25,1);}
+		#div3 {-webkit-transition-timing-function: cubic-bezier(0.42,0,1,1);}
+		#div4 {-webkit-transition-timing-function: cubic-bezier(0,0,0.58,1);}
+		#div5 {-webkit-transition-timing-function: cubic-bezier(0.42,0,0.58,1);}*/
+		
+		div:hover
+		{
+			width:300px;
+		}
 	</style>
 	<!-- http://www.runoob.com/cssref/css3-pr-transition.html -->
+	<!-- transition-property	指定CSS属性的name，transition效果
+	transition-duration	transition效果需要指定多少秒或毫秒才能完成
+	transition-timing-function	指定transition效果的转速曲线
+
+			linear	规定以相同速度开始至结束的过渡效果（等于 cubic-bezier(0,0,1,1)）。
+			ease	规定慢速开始，然后变快，然后慢速结束的过渡效果（cubic-bezier(0.25,0.1,0.25,1)）。
+			ease-in	规定以慢速开始的过渡效果（等于 cubic-bezier(0.42,0,1,1)）。
+			ease-out	规定以慢速结束的过渡效果（等于 cubic-bezier(0,0,0.58,1)）。
+			ease-in-out	规定以慢速开始和结束的过渡效果（等于 cubic-bezier(0.42,0,0.58,1)）。
+			cubic-bezier(n,n,n,n)	在 cubic-bezier 函数中定义自己的值。可能的值是 0 至 1 之间的数值。
+	transition-delay	定义transition效果开始的时候 -->
 </head>
 <body>
 	<a href="http://www.baidu.com"><img src="1.jpg" alt=""></a>
 	<img src="2.jpg" alt="">
 	<img src="3.jpg" alt="">
+
+
+	<p><b>注意:</b> 该属性不兼容 IE 9 以及更早版本的浏览器</p>
+
+	<div id="div1" style="top:100px">linear</div>
+	<div id="div2" style="top:150px">ease</div>
+	<div id="div3" style="top:200px">ease-in</div>
+	<div id="div4" style="top:250px">ease-out</div>
+	<div id="div5" style="top:300px">ease-in-out</div>
+
+	<p>将鼠标移动至块上查看过渡动画效果.</p>
 </body>
 </html>
