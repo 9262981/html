@@ -1,0 +1,411 @@
+From: <Saved by Blink>
+Subject: ??????????CSS?
+Date: Thu, 22 Jun 2016 03:35:59 -0000
+MIME-Version: 1.0
+Content-Type: multipart/related;
+	type="text/html";
+	boundary="----=_NextPart_000_AF1D_0F52C137.5C38B19F"
+
+------=_NextPart_000_AF1D_0F52C137.5C38B19F
+Content-Type: text/html
+Content-Transfer-Encoding: quoted-printable
+Content-Location: http://www.chaimol.comli.com/begincss.html
+
+<html><head><meta http-equiv=3D"Content-Type" content=3D"text/html; charset=
+=3DUTF-8"></head><body><table border=3D"1" cellpadding=3D"2" bgcolor=3D"#FF=
+FFDF" bordercolor=3D"#E8B900" align=3D"center"><tbody><tr><td><font face=3D=
+"Arial" size=3D"2" color=3D"#000000"><b>This website was set to be removed =
+for inactivity by <a href=3D"http://www.000webhost.com/">www.000webhost.com=
+</a>. If you own this website, <a href=3D"http://www.000webhost.com/protect=
+-website">click here</a> to protect it.</b></font></td></tr></tbody></table=
+><br>=EF=BB=BF
+
+
+<title>=E4=B8=BB=E6=B5=81=E5=89=8D=E7=AB=AF=E5=9B=A2=E9=98=9F=E7=9A=84=E5=
+=88=9D=E5=A7=8B=E5=8C=96CSS=E3=80=82</title>
+<link rel=3D"stylesheet" type=3D"text/css" href=3D"http://www.chaimol.comli=
+.com/myblog.css"> =20
+<style type=3D"text/css">
+body{
+
+	font-size:20px;
+
+	}
+</style>
+
+
+<h1>=E5=90=84=E5=A4=A7=E5=9B=A2=E9=98=9F=E7=9A=84=E5=88=9D=E5=A7=8B=E5=8C=
+=96CSS=E4=BB=A3=E7=A0=81</h1>
+<p>=E6=96=B0=E6=B5=AA=E5=AE=98=E7=BD=91<br>
+body,ul,ol,li,p,h1,h2,h3,h4,h5,h6,form,fieldset,table,td,img,div{margin:0;p=
+adding:0;border:0;}<br>
+body{background:#fff;color:#333;font-size:12px; margin-top:5px;font-family:=
+"SimSun","=E5=AE=8B=E4=BD=93","Arial Narrow";}<br>
+=20
+ul,ol{list-style-type:none;}<br>
+select,input,img,select{vertical-align:middle;}<br>
+=20
+a{text-decoration:none;}<br>
+a:link{color:#009;} <br>  a:visited{color:#800080;}<br>
+a:hover,a:active,a:focus{color:#c00;text-decoration:underline;}</p>
+<hr>
+<p>=E7=BD=91=E6=98=93<br>
+html {overflow-y:scroll;}
+body {margin:0; padding:29px 0 0; font:12px "\5B8B\4F53",sans-serif;backgro=
+und:#ffffff;}
+div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,bl=
+ockquote,p{padding:0; margin:0;}
+table,td,tr,th{font-size:12px;}
+li{list-style-type:none;}
+img{vertical-align:top;border:0;}
+ol,ul {list-style:none;}
+h1,h2,h3,h4,h5,h6 {font-size:12px; font-weight:normal;}
+address,cite,code,em,th {font-weight:normal; font-style:normal;}</p>
+<hr>
+
+<p>=E6=B7=98=E5=AE=9D=E5=AE=98=E7=BD=91<br>
+body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pr=
+e, form, fieldset, legend, button, input, <br>
+textarea, th, td { margin:0; padding:0; }<br>
+body, button, input, select, textarea { font:12px/1.5 tahoma, arial, \5b8b\=
+4f53; }<br>
+h1, h2, h3, h4, h5, h6 { font-size:100%; }<br>
+address, cite, dfn, em, var { font-style:normal; }<br>
+code, kbd, pre, samp { font-family:courier new, courier, monospace; }<br>
+small { font-size:12px; }<br>
+ul, ol { list-style:none; }<br>
+a { text-decoration:none; }<br>
+a:hover { text-decoration:underline; }<br>
+sup { vertical-align:text-top; }<br>
+sub { vertical-align:text-bottom; }<br>
+legend { color:#000; }<br>
+fieldset, img { border:0; }<br>
+button, input, select, textarea { font-size:100%; }<br>
+table { border-collapse:collapse; border-spacing:0; }</p>
+<hr>
+<p></p><ol>=E5=9C=A8html=E4=B8=AD=E5=BC=95=E5=85=A5CSS=E7=9A=84=E6=96=B9=E5=
+=BC=8F:
+<li> &lt;style type=3D"text/css"&gt;  &nbsp; div{margin: 0;padding: 0;borde=
+r:1px red solid;} &nbsp;  &lt;/style&gt;</li>
+<li>  &lt;style type=3D"text/css"&gt; &nbsp; @import "mystyle.css";   &nbsp=
+;  &lt;/style&gt;<br>
+=E8=BF=99=E9=87=8C=E7=9A=84@ipport=EF=BC=88=E5=AF=BC=E5=85=A5=E5=BC=8F=EF=
+=BC=89=E5=8F=AF=E4=BB=A5=E5=9C=A8CSS=E4=B8=AD=E9=93=BE=E6=8E=A5=E5=8F=A6=E4=
+=B8=80=E4=B8=AACSS=E6=96=87=E4=BB=B6=E3=80=82=E9=93=BE=E6=8E=A5=E5=BC=8F=EF=
+=BC=88link=EF=BC=89=EF=BC=8C=E7=BD=91=E9=A1=B5=E7=9B=B4=E6=8E=A5=E5=8A=A0=
+=E8=BD=BD=E5=87=BA=E6=9D=A5=E5=B0=B1=E6=9C=89CSS=E3=80=82=E8=80=8C@ipport(=
+=E5=AF=BC=E5=85=A5=E5=BC=8F)=E7=9A=84=E5=88=99=E6=98=AF=E5=85=88=E5=8A=A0=
+=E8=BD=BD=E5=AE=8Chtml=E5=90=8E=EF=BC=8C=E5=86=8D=E5=8A=A0=E8=BD=BDCSS=E3=
+=80=82=E5=AF=BC=E5=85=A5=E5=BC=8F=E5=8F=AF=E4=BB=A5=E5=9C=A8=E6=A0=B9CSS=E6=
+=96=87=E4=BB=B6=E9=87=8C=E5=AF=BC=E5=85=A5=E6=94=AF=E9=93=BECSS=E3=80=82<br=
+>
+</li>
+<li> &lt;link rel=3D"stylesheet" style=3D"text/css" href=3D"common.css"&gt;=
+  =E7=9B=AE=E5=89=8D=E7=9A=84=E4=B8=BB=E6=B5=81=E6=96=B9=E5=BC=8F=E3=80=82<=
+/li></ol>
+<!--   &lt; =E4=BD=9C=E7=94=A8=E6=98=AF=E8=BE=93=E5=87=BA< =20
+***    &gt; =E4=BD=9C=E7=94=A8=E6=98=AF=E8=BE=93=E5=87=BA>   =20
+***    &nbsp;=E4=BD=9C=E7=94=A8=E6=98=AF=E8=BE=93=E5=87=BA=E7=A9=BA=E6=A0=
+=BC      -->
+
+<div id=3D"qq-sendUrl-btn"></div></body><div></div><div></div></html>
+------=_NextPart_000_AF1D_0F52C137.5C38B19F
+Content-Type: text/css
+Content-Transfer-Encoding: quoted-printable
+Content-Location: http://www.chaimol.comli.com/myblog.css
+
+body { font-style: normal; font-weight: bold; font-variant: normal; font-st=
+retch: normal; font-size: 30px; line-height: normal; font-family: arial, sa=
+ns-serif; }
+
+h1, h2, h3, h4, h5, h6 { text-align: center; }
+
+p { text-indent: 2em; text-decoration: none; }
+
+#duanluo { font-weight: bold; font-style: normal; font-variant: normal; fon=
+t-stretch: normal; font-size: 20px; line-height: normal; font-family: songt=
+i; text-decoration: underline; margin-left: 5em; margin-right: 5em; padding=
+: 1em 2em; background-color: rgba(255, 240, 20, 0.498039); background-posit=
+ion: 220px 100px; background-repeat: no-repeat; }
+
+div.box { width: 200px; border: 1px solid black; font-size: 20px; padding: =
+1em 2em; background-color: orange; }
+------=_NextPart_000_AF1D_0F52C137.5C38B19F
+Content-Type: text/html
+Content-Transfer-Encoding: quoted-printable
+Content-Location: chrome-extension://goffgmkdmpeampfjljhfkfikpcanibnk/pages/vomnibar.html
+
+<html><head><meta http-equiv=3D"Content-Type" content=3D"text/html; charset=
+=3DUTF-8">
+=09
+    <title>Vomnibar</title>
+   =20
+   =20
+   =20
+   =20
+   =20
+   =20
+   =20
+    <link rel=3D"stylesheet" type=3D"text/css" href=3D"chrome-extension://g=
+offgmkdmpeampfjljhfkfikpcanibnk/content_scripts/vimium.css">
+    <link rel=3D"stylesheet" type=3D"text/css" href=3D"chrome-extension://g=
+offgmkdmpeampfjljhfkfikpcanibnk/pages/vomnibar.css">
+  </head>
+  <body>
+    <div id=3D"vomnibar" class=3D"vimiumReset">
+      <div class=3D"vimiumReset vomnibarSearchArea">
+        <input id=3D"vomnibarInput" type=3D"text" class=3D"vimiumReset">
+      </div>
+      <ul class=3D"vimiumReset"></ul>
+    </div>
+ =20
+
+</body></html>
+------=_NextPart_000_AF1D_0F52C137.5C38B19F
+Content-Type: text/css
+Content-Transfer-Encoding: quoted-printable
+Content-Location: chrome-extension://goffgmkdmpeampfjljhfkfikpcanibnk/content_scripts/vimium.css
+
+.vimiumreset, div.vimiumreset, span.vimiumreset, table.vimiumreset, a.vimiu=
+mreset, a:visited.vimiumreset, a:link.vimiumreset, a:hover.vimiumreset, td.=
+vimiumreset, tr.vimiumreset { border: none; bottom: auto; box-shadow: none;=
+ color: black; cursor: auto; display: inline; float: none; font-family: 'He=
+lvetica Neue', Helvetica, Arial, sans-serif; font-size: inherit; font-style=
+: normal; font-variant: normal; font-weight: normal; height: auto; left: au=
+to; letter-spacing: 0px; line-height: 100%; margin: 0px; max-height: none; =
+max-width: none; min-height: 0px; min-width: 0px; opacity: 1; padding: 0px;=
+ position: static; right: auto; text-align: left; text-decoration: none; te=
+xt-indent: 0px; text-shadow: none; text-transform: none; top: auto; vertica=
+l-align: baseline; white-space: normal; width: auto; z-index: 2147483647; b=
+ackground: none; }
+
+div.internalvimiumhintmarker { position: absolute; display: block; top: -1p=
+x; left: -1px; white-space: nowrap; overflow: hidden; font-size: 11px; padd=
+ing: 1px 3px 0px; border: 1px solid rgb(195, 138, 34); border-radius: 3px; =
+box-shadow: rgba(0, 0, 0, 0.298039) 0px 3px 7px 0px; background: -webkit-gr=
+adient(linear, 0% 0%, 0% 100%, from(rgb(255, 247, 133)), to(rgb(255, 197, 6=
+6))); }
+
+div.internalvimiumhintmarker span { color: rgb(48, 37, 5); font-family: Hel=
+vetica, Arial, sans-serif; font-weight: bold; font-size: 11px; text-shadow:=
+ rgba(255, 255, 255, 0.6) 0px 1px 0px; }
+
+div.internalvimiumhintmarker > .matchingcharacter { color: rgb(212, 172, 58=
+); }
+
+div > .vimiumactivehintmarker span { color: rgb(160, 117, 85) !important; }
+
+div.internalvimiuminputhint { position: absolute; display: block; border: 1=
+px solid rgb(195, 138, 34); pointer-events: none; background-color: rgba(25=
+5, 247, 133, 0.298039); }
+
+div.internalvimiumselectedinputhint { border: 1px solid rgb(153, 51, 51) !i=
+mportant; background-color: rgba(255, 102, 102, 0.298039); }
+
+div.internalvimiumselectedinputhint span { color: white !important; }
+
+div.vimiumhighlightedframe { position: fixed; top: 0px; left: 0px; width: 1=
+00%; height: 100%; padding: 0px; margin: 0px; border: 5px solid yellow; box=
+-sizing: border-box; pointer-events: none; }
+
+div#vimiumhelpdialog { opacity: 0.92; position: fixed; border: 2px solid rg=
+b(179, 179, 179); border-radius: 6px; padding: 8px 12px; width: 640px; max-=
+height: 85%; left: 50%; margin-left: -320px; top: 50px; box-shadow: rgba(0,=
+ 0, 0, 0.4) 0px 0px 6px; overflow-y: auto; z-index: 2147483647; background-=
+color: rgb(238, 238, 238); }
+
+div#vimiumhelpdialog a { color: blue; }
+
+div#vimiumtitle, div#vimiumtitle span, div#vimiumtitle * { font-size: 20px;=
+ }
+
+#vimiumtitle { display: block; line-height: 130%; }
+
+div.vimiumcolumn { width: 50%; float: left; font-size: 11px; line-height: 1=
+30%; }
+
+div.vimiumcolumn tr { display: table-row; }
+
+div.vimiumcolumn td { display: table-cell; font-size: 11px; line-height: 13=
+0%; }
+
+div.vimiumcolumn table, div.vimiumcolumn td, div.vimiumcolumn tr { padding:=
+ 0px; margin: 0px; }
+
+div.vimiumcolumn table { width: 100%; table-layout: auto; }
+
+div.vimiumcolumn td { vertical-align: top; padding: 1px; }
+
+div#vimiumhelpdialog div.vimiumcolumn tr > td:first-of-type { text-align: r=
+ight; font-weight: bold; color: rgb(47, 80, 142); white-space: nowrap; }
+
+div#vimiumhelpdialog div.vimiumcolumn tr > td:nth-of-type(3) { width: 100%;=
+ }
+
+div#vimiumhelpdialog div.vimiumdivider { display: block; height: 1px; width=
+: 92%; margin: 10px auto; background-color: rgb(154, 154, 154); }
+
+div#vimiumhelpdialog td.vimiumhelpsectiontitle { font-weight: bold; padding=
+-top: 3px; }
+
+div#vimiumhelpdialog div.commandname { font-family: 'courier new'; }
+
+div#vimiumhelpdialog div.advanced { display: none; }
+
+div#vimiumhelpdialog div.advanced td:nth-of-type(3) { color: rgb(85, 85, 85=
+); }
+
+div#vimiumhelpdialog a.closebutton { position: absolute; right: 7px; top: 5=
+px; font-family: 'courier new'; font-weight: bold; color: rgb(85, 85, 85); =
+text-decoration: none; padding-left: 10px; font-size: 20px; }
+
+div#vimiumhelpdialog a { text-decoration: underline; }
+
+div#vimiumhelpdialog .wikipage, div#vimiumhelpdialog .optionspage { positio=
+n: absolute; display: block; font-size: 11px; line-height: 130%; top: 6px; =
+}
+
+div#vimiumhelpdialog .optionspage { right: 40px; }
+
+div#vimiumhelpdialog .wikipage { right: 83px; }
+
+div#vimiumhelpdialog a.closebutton:hover { color: black; -webkit-user-selec=
+t: none; }
+
+div#vimiumhelpdialogfooter { display: block; position: relative; }
+
+div#vimiumhelpdialogfooter * { font-size: 10px; }
+
+div#vimiumhelpdialogfooter .toggleadvancedcommands { position: absolute; ri=
+ght: 2px; top: -34px; }
+
+div.vimiumhud { display: block; position: fixed; bottom: 0px; right: 0px; c=
+olor: black; height: auto; min-height: 13px; width: auto; max-width: 400px;=
+ min-width: 150px; text-align: left; padding: 3px 3px 2px; margin: 0px; bor=
+der: 1px solid rgb(179, 179, 179); border-radius: 4px 4px 0px 0px; font-fam=
+ily: 'Lucida Grande', Arial, Sans; font-size: 12px; text-shadow: rgb(255, 2=
+55, 255) 0px 1px 2px; line-height: 1; background-color: rgb(235, 235, 235);=
+ }
+
+iframe.vimiumhudframe { display: block; position: fixed; bottom: 0px; right=
+: 150px; height: 20px; min-height: 20px; width: 450px; min-width: 150px; pa=
+dding: 0px; margin: 0px; border: none; z-index: 2147483646; opacity: 0; bac=
+kground: none; }
+
+div.vimiumhud span#hud-find-input, div.vimiumhud span#hud-match-count { dis=
+play: inline; outline: none; white-space: nowrap; overflow-y: hidden; }
+
+div.vimiumhud span#hud-find-input br { display: none; }
+
+div.vimiumhud span#hud-find-input * { display: inline; white-space: nowrap;=
+ }
+
+body.vimiumfindmode ::selection { background: rgb(255, 150, 50); }
+
+iframe.vomnibarframe { padding: 0px; overflow: hidden; display: block; posi=
+tion: fixed; width: calc(80% + 20px); min-width: 400px; height: calc(100% -=
+ 70px); top: 70px; left: 50%; margin: 0px 0px 0px -40%; border: none; font-=
+family: sans-serif; z-index: 2147483645; background-color: transparent; }
+
+div#vimiumflash { box-shadow: rgb(65, 131, 196) 0px 0px 4px 2px; padding: 1=
+px; position: absolute; z-index: 2147483647; background-color: transparent;=
+ }
+
+iframe.vimiumuicomponenthidden { display: none; }
+
+iframe.vimiumuicomponentvisible { display: block; }
+
+iframe.vimiumuicomponentreactivated { border: 5px solid yellow; }
+------=_NextPart_000_AF1D_0F52C137.5C38B19F
+Content-Type: text/css
+Content-Transfer-Encoding: quoted-printable
+Content-Location: chrome-extension://goffgmkdmpeampfjljhfkfikpcanibnk/pages/vomnibar.css
+
+#vomnibar ol, #vomnibar ul { list-style: none; display: none; }
+
+#vomnibar { display: block; position: fixed; width: calc(100% - 20px); top:=
+ 8px; left: 8px; font-family: sans-serif; text-align: left; border-radius: =
+4px; box-shadow: rgba(0, 0, 0, 0.8) 0px 2px 10px; border: 1px solid rgb(170=
+, 170, 170); z-index: 2147483646; background: rgb(241, 241, 241); }
+
+#vomnibar input { color: rgb(0, 0, 0); font-family: 'Helvetica Neue', Helve=
+tica, Arial, sans-serif; font-size: 20px; height: 34px; margin-bottom: 0px;=
+ padding: 4px; border-radius: 3px; border: 1px solid rgb(232, 232, 232); bo=
+x-shadow: rgb(68, 68, 68) 0px 0px 1px; width: 100%; outline: none; box-sizi=
+ng: border-box; background-color: white; }
+
+#vomnibar .vomnibarsearcharea { display: block; padding: 10px; border-radiu=
+s: 4px 4px 0px 0px; border-bottom-width: 1px; border-bottom-style: solid; b=
+order-bottom-color: rgb(198, 201, 206); background-color: rgb(241, 241, 241=
+); }
+
+#vomnibar ul { border-radius: 0px 0px 4px 4px; list-style: none; padding: 0=
+px 0px 10px; background-color: white; }
+
+#vomnibar li { border-bottom-width: 1px; border-bottom-style: solid; border=
+-bottom-color: rgb(221, 221, 221); line-height: 1.1em; padding: 7px 10px; f=
+ont-size: 16px; color: black; position: relative; display: list-item; margi=
+n: auto; }
+
+#vomnibar li:last-of-type { border-bottom-style: none; }
+
+#vomnibar li .vomnibartophalf, #vomnibar li .vomnibarbottomhalf { display: =
+block; overflow: hidden; }
+
+#vomnibar li .vomnibarbottomhalf { font-size: 15px; margin-top: 3px; paddin=
+g: 2px 0px; }
+
+#vomnibar li .vomnibaricon { padding-left: 20px; background-size: 16px; bac=
+kground-position-y: 50%; background-repeat: no-repeat; }
+
+#vomnibar li .vomnibarsource { color: rgb(119, 119, 119); margin-right: 4px=
+; }
+
+#vomnibar li .vomnibarrelevancy { position: absolute; right: 0px; top: 0px;=
+ padding: 5px; color: black; font-family: monospace; width: 100px; overflow=
+: hidden; background-color: white; }
+
+#vomnibar li .vomnibarurl { white-space: nowrap; color: rgb(34, 70, 132); }
+
+#vomnibar li .vomnibarmatch { font-weight: bold; color: black; }
+
+#vomnibar li em, #vomnibar li .vomnibartitle { color: black; margin-left: 4=
+px; font-weight: normal; }
+
+#vomnibar li em { font-style: italic; }
+
+#vomnibar li em .vomnibarmatch, #vomnibar li .vomnibartitle .vomnibarmatch =
+{ color: rgb(51, 51, 51); }
+
+#vomnibar li.vomnibarselected { font-weight: normal; background-color: rgb(=
+187, 206, 233); }
+
+#vomnibarinput::selection { background-color: rgb(230, 238, 251); }
+
+.vomnibarinserttext { }
+
+.vomnibarnoinserttext { visibility: hidden; }
+------=_NextPart_000_AF1D_0F52C137.5C38B19F
+Content-Type: text/html
+Content-Transfer-Encoding: quoted-printable
+Content-Location: chrome-extension://goffgmkdmpeampfjljhfkfikpcanibnk/pages/hud.html
+
+<html><head><meta http-equiv=3D"Content-Type" content=3D"text/html; charset=
+=3DUTF-8">
+=09
+    <title>HUD</title>
+    <link rel=3D"stylesheet" type=3D"text/css" href=3D"chrome-extension://g=
+offgmkdmpeampfjljhfkfikpcanibnk/content_scripts/vimium.css">
+   =20
+   =20
+   =20
+   =20
+   =20
+  </head>
+  <body>
+    <div class=3D"vimiumReset vimiumHUD vimiumUIComponentHidden" id=3D"hud"=
+></div>
+ =20
+
+</body></html>
+------=_NextPart_000_AF1D_0F52C137.5C38B19F--
