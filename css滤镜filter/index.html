@@ -1,0 +1,122 @@
+<!DOCTYPE HTML>
+<html lang="zh-cn">
+
+    <head>
+        <meta charset="UTF-8" />
+        <title>Html 模糊效果:css filter</title>
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+        <meta name="description" content="请输入您的描述信息" />
+        <meta name="keywords" content="关键字,关键字,关键字" />
+        <meta name="author" content="Simon Sun" />
+
+        <style type="text/css">
+            .box {
+                margin: 0 auto;
+            }
+            
+            .box img {
+                width: 300px;
+              
+            }
+            
+            .f1 {
+                float: left;
+            }
+            
+            .f2 {
+                float: left;
+                padding-left: 20px;
+            }
+            
+            .blur {
+                -webkit-filter: blur(4px);
+                filter: blur(4px);
+            }
+            
+            .brightness {
+                -webkit-filter: brightness(1.30);
+                filter: brightness(1.30);
+            }
+            
+            .contrast {
+                -webkit-filter: contrast(180%);
+                filter: contrast(180%);
+            }
+            
+            .grayscale {
+                -webkit-filter: grayscale(100%);
+                filter: grayscale(100%);
+            }
+            
+            .huerotate {
+                -webkit-filter: hue-rotate(180deg);
+                filter: hue-rotate(180deg);
+            }
+            
+            .invert {
+                -webkit-filter: invert(100%);
+                filter: invert(100%);
+            }
+            
+            .opacity {
+                -webkit-filter: opacity(50%);
+                filter: opacity(50%);
+            }
+            
+            .saturate {
+                -webkit-filter: saturate(7);
+                filter: saturate(7);
+            }
+            
+            .sepia {
+                -webkit-filter: sepia(100%);
+                filter: sepia(100%);
+            }
+            
+            .shadow {
+                -webkit-filter: drop-shadow(8px 8px 10px green);
+                filter: drop-shadow(8px 8px 10px green);
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="box">
+            <div class="f2"><img src="1.jpg" />
+                <p>default</p>
+            </div>
+            <div class="f2"><img src="1.jpg" class="blur" />
+                <p>blur</p>
+            </div>
+            <div class="f2"><img src="1.jpg" class="brightness" />
+                <p>brightness</p>
+            </div>
+            <div class="f2"><img src="1.jpg" class="contrast" />
+                <p>contrast</p>
+            </div>
+            <div class="f2"><img src="1.jpg" class="grayscale" />
+                <p>grayscale</p>
+            </div>
+            <div class="f2"><img src="1.jpg" class="huerotate" />
+                <p>huerotate</p>
+            </div>
+            <div class="f2"><img src="1.jpg" class="invert" />
+                <p>invert</p>
+            </div>
+            <div class="f2"><img src="1.jpg" class="opacity" />
+                <p>opacity</p>
+            </div>
+            <div class="f2"><img src="1.jpg" class="saturate" />
+                <p>saturate</p>
+            </div>
+            <div class="f2"><img src="1.jpg" class="sepia" />
+                <p>sepia</p>
+            </div>
+            <div class="f2"><img src="1.jpg" class="shadow" />
+                <p>shadow</p>
+            </div>
+
+        </div>
+    </body>
+
+</html>
