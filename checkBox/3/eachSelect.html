@@ -1,0 +1,46 @@
+<html>  
+<head><title>CheckBox</title>  
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.4.1.min.js"></script>
+ 
+<script type="text/javascript">
+    $(function() {  
+        $("#select").click(function() {  
+        if ($(this).attr("checked")) {  
+            $("input[name=items]").each(function() {  
+            $(this).attr("checked", true);  
+        });  
+        } else {  
+            $("input[name=items]").each(function() {  
+            $(this).attr("checked", false);  
+        });  
+        }  
+    });
+    $("#submit").click(function() {  
+        var text="";  
+        $("input[name=items]").each(function() {  
+            if ($(this).attr("checked")) {  
+                text += " "+$(this).val();  
+            }  
+        });  
+         $("#div").html(text);  
+    });  
+    }); 
+</script>
+</head>  
+<body>  
+<form action="#" method="post">  
+    <input type="checkbox" id="select"/> 全选  
+    <input type="checkbox" value="1" name="items">1
+    <input type="checkbox" value="2" name="items">2
+    <input type="checkbox" value="3" name="items">3
+    <input type="checkbox" value="4" name="items">4
+    <input type="checkbox" value="5" name="items">5
+    <input type="checkbox" value="6" name="items">6
+    <input type="checkbox" value="7" name="items">7
+    <input type="checkbox" value="8" name="items">8
+    <input type="checkbox" value="9" name="items">9   
+    <input type="button" id="submit" value="提交">  
+<div id="div"></div>
+</form>  
+</body>  
+</html>
