@@ -1,0 +1,62 @@
+<!DOCTYPE HTML>
+<html lang="zh-cn">
+<head>
+	<meta charset="UTF-8" />
+	<title>simonDemo</title>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+	<meta name="description" content="请输入您的描述信息" />
+	<meta name="keywords" content="关键字,关键字,关键字" />
+	<meta name="author" content="Simon Sun" />
+	<style></style>
+	<script>
+		var datatable = null;  
+        var db = openDatabase("mydb","1.0","My Database",1024*100);  
+        db.transaction(function(tx){  
+            tx.executeSql("CREATE TABLE IF NOT EXISTS MsgData(name TEXT,message TEXT,time INTEGER)",[]);  
+            tx.executeSql("SELECT * from MsgData",[],function(tx,rs){  
+                console.log(rs.rows.length)  
+                for(var i=0;i<rs.rows.length;i++){  
+                    console.log(rs.rows.item(i))  
+                 }  
+            })  
+        })          
+        function add(){  
+            db.transaction(function(tx){  
+                tx.executeSql("INSERT INTO MsgData VALUES(?,?,?)",[1,2,3],function(){  
+                    alert("成功");  
+                    tx.executeSql("SELECT * from MsgData",[],function(tx,rs){  
+                        for(var i=0;i<rs.rows.length;i++){  
+                            console.log(rs.rows.item(i))  
+                        }  
+                    })                      
+                }),function(){  
+                    alert("失败")  
+                }  
+            })  
+        }  
+        setTimeout(function(){  
+            add();  
+        },5000);  
+        setTimeout(function(){  
+            db.transaction(function(tx){  
+                tx.executeSql("INSERT INTO MsgData VALUES(?,?,?)",[1,2,3],function(){  
+                    alert("成功");  
+                      
+                }),function(){  
+                    alert("失败")  
+                }  
+            });  
+            db.transaction(function(tx){  
+                tx.executeSql("SELECT * from MsgData",[],function(tx,rs){  
+                    for(var i=0;i<rs.rows.length;i++){  
+                            console.log(rs.rows.item(i))  
+                        }  
+                })  
+            })  
+        },10000)  
+	</script>
+</head>
+<body>
+	
+</body>
+</html>

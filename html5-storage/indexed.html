@@ -1,0 +1,34 @@
+<!DOCTYPE HTML>
+<html lang="zh-cn">
+<head>
+	<meta charset="UTF-8" />
+	<title>simonDemo</title>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+	<meta name="description" content="请输入您的描述信息" />
+	<meta name="keywords" content="关键字,关键字,关键字" />
+	<meta name="author" content="Simon Sun" />
+	<style></style>
+	<script>
+		function connectDBtest(){  
+		window.indexedDB = window.indexedDB || window.mozIndexedDB || window.webkitIndexedDB || window.msIndexedDB;  
+		window.IDBTransaction = window.IDBTransaction || window.webkitIDBTransaction || window.msIDBTransaction;  
+		 window.IDBKeyRange = window.IDBKeyRange || window.webkitIDBKeyRange || window.msIDBKeyRange  
+            var dbName = "indexedDBtest";  
+            var dbVersion = 1;  
+            var idb;  
+            var dbConnect = indexedDB.open(dbName,dbVersion);  
+            dbConnect.onsuccess = function(e){  
+                idb = e.target.result;  
+                alert("链接数据库成功");  
+            }  
+            dbConnect.onerror = function(e){  
+                alert("链接数据库失败");  
+            }  
+        }	
+       	connectDBtest();
+	</script>
+</head>
+<body>
+	
+</body>
+</html>
