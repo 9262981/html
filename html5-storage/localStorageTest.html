@@ -1,0 +1,26 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    window.onload=function () {
+        function hasStorage(){
+            try{
+                localStorage.setItem('test', '7');
+                if(localStorage.getItem('test')=== '7'){
+                    alert(localStorage.getItem('test'))
+                }
+            }
+            catch(er){alert('error:localstorage not support')}
+            return false;
+        };
+        hasStorage();
+    }
+</script>
+</html>

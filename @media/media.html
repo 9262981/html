@@ -2,54 +2,70 @@
 <html lang="zh-cn">
 <head>
 <meta charset="utf-8" />
-<title>@media_CSS参考手册_web前端开发参考手册系列</title>
+<title>@media</title>
 <meta name="author" content="" />
 <meta name="copyright" content="" />
+
 <style>
-body{background:#000}
-.test,.test2{width:100px;height: 100px;background: #fff;}
+	*{margin: 0 ;padding: 0}
+	/* 常规样式 */
+	.test,.test2{width:800px;background: #fff;margin: 0px ;padding: 0px;opacity:0.5;}
+	body{background:url(1.jpg) ; background-position: center; background-size:cover;}
+	/*max-width定义输出设备中的页面最大可见区域宽度。*/
+	/*min-width定义输出设备中的页面最小可见区域宽度。*/
 
-@media (min-width: 568px) and (max-width:768px) {.test,.test2{width:100px;height: 100px;background: #fff;} body{background:gray; }}
-@media (min-width: 768px)						{.test,.test2{width:200px;height: 100px;background: #fff;} body{background:green; }}
 
-@media (min-width: 992px)						{.test,.test2{width:300px;height: 100px;background: #fff;} body{background:red; }}
-
-@media (min-width: 1200px)						{.test,.test2{width:400px;height: 100px;background: #fff;} body{background:yellow; }}
-}
+	/* 大屏幕 min-width: 1200px*/
+	@media  screen and (min-width: 1200px) 
+		{body{background:url(2.jpg);background-position: center; background-size:cover;}.test,.test2{margin: 0 auto;width: 95%;}}
+	/* 平板电脑和小屏电脑之间的分辨率 (min-width: 768px) and (max-width: 979px) */
+	@media  screen and (min-width: 768px) and (max-width: 979px) 
+		{body{background:url(3.jpg);background-position: center; background-size:cover; }.test,.test2{margin: 0 auto;width: 95%;}}
+	 
+	/* 横向放置的手机和竖向放置的平板之间的分辨率 (max-width: 767px) */
+	@media  screen and (max-width: 767px) 
+		{body{background:green; }.test,.test2{margin: 0 auto;width: 95%;}}
+	 
+	/* 横向放置的手机及分辨率更小的设备 max-width: 480px*/
+	@media  screen and (max-width: 480px) 
+		{body{background:gray;}.test,.test2{margin: 0 auto;width: 95%;} }
 </style>
 </head>
 <body>
-<div>Media Queries媒体查询</div>
-<div class="test">
-		媒体查询，响应到宽度去 修改body的颜色	
-		
-</div>
-<div class="test2">
-		
-@media (min-width: 768px){ //>=768的设备 }
+	<div>Media Queries媒体查询</div>
+	<div class="test">
+			
+			定义和使用
+			使用 @media 查询，你可以针对不同的媒体类型定义不同的样式。
+			@media 可以针对不同的屏幕尺寸设置不同的样式，特别是如果你需要设置设计响应式的页面，@media 是非常有用的。
+			当你重置浏览器大小的过程中，页面也会根据浏览器的宽度和高度重新渲染页面。
 
-@media (min-width: 992px){ //>=992的设备 }
+	</div>
+	<div class="test2">
+		@media (min-width: 768px){ //>=768的设备 }
 
-@media (min-width: 1200){ //>=1200的设备 }
+		@media (min-width: 992px){ //>=992的设备 }
 
-注意下顺序，如果你把@media (min-width: 768px)写在了下面那么很悲剧，
+		@media (min-width: 1200){ //>=1200的设备 }
 
-@media (min-width: 1200){ //>=1200的设备 }
+		注意下顺序，如果你把@media (min-width: 768px)写在了下面那么很悲剧，
 
-@media (min-width: 992px){ //>=992的设备 }
+		@media (min-width: 1200){ //>=1200的设备 }
 
-@media (min-width: 768px){ //>=768的设备 }
+		@media (min-width: 992px){ //>=992的设备 }
 
-因为如果是1440,由于1440>768那么你的1200就会失效。
+		@media (min-width: 768px){ //>=768的设备 }
 
-所以我们用min-width时，小的放上面大的在下面，同理如果是用max-width那么就是大的在上面，小的在下面
+		因为如果是1440,由于1440>768那么你的1200就会失效。
 
-@media (max-width: 1199){ //<=1199的设备 }
+		所以我们用min-width时，小的放上面大的在下面，同理如果是用max-width那么就是大的在上面，小的在下面
 
-@media (max-width: 991px){ //<=991的设备 }
+		@media (max-width: 1199){ //<=1199的设备 }
 
-@media (max-width: 767px){ //<=768的设备 }
-</div>
+		@media (max-width: 991px){ //<=991的设备 }
+
+		@media (max-width: 767px){ //<=768的设备 }
+	</div>
 </body>
 </html>
 			
